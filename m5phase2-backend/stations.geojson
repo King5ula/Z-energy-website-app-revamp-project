@@ -1,0 +1,5610 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2026-06-29T07:08:15Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/35402192",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "name": "Z Templeton",
+        "website": "https://www.z.co.nz/find-a-station/station/z-templeton/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          172.4882485,
+          -43.5494954
+        ]
+      },
+      "id": "way/35402192"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/40337489",
+        "amenity": "fuel",
+        "branch": "Cashmere",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "landuse": "retail",
+        "name": "Z",
+        "opening_hours": "Mo-Su 06:00-24:00",
+        "phone": "+64 3 332 2646",
+        "website": "https://www.z.co.nz/find-a-station/station/z-cashmere/",
+        "wheelchair": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          172.6365419,
+          -43.5653336
+        ]
+      },
+      "id": "way/40337489"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/53725822",
+        "amenity": "fuel",
+        "branch": "Beach Road",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "compressed_air": "yes",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "landuse": "retail",
+        "name": "Z",
+        "official_name": "Z Beach Road",
+        "opening_hours": "24/7",
+        "operator": "Z Energy",
+        "phone": "+64 9 373 5268",
+        "website": "https://www.z.co.nz/find-a-station/station/z-beach-rd/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.7750327,
+          -36.8495533
+        ]
+      },
+      "id": "way/53725822"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/139333020",
+        "addr:city": "Christchurch",
+        "addr:country": "NZ",
+        "addr:housenumber": "1",
+        "addr:street": "Papanui Road",
+        "amenity": "fuel",
+        "branch": "Carlton Corner",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "building": "retail",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "height": "3.7",
+        "name": "Z",
+        "opening_hours": "24/7",
+        "phone": "+64 3 355 9532",
+        "website": "https://www.z.co.nz/find-a-station/station/z-carlton-corner/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          172.6270037,
+          -43.5200089
+        ]
+      },
+      "id": "way/139333020"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/147085578",
+        "addr:housenumber": "68",
+        "addr:street": "Highbrook Drive",
+        "addr:suburb": "East Tāmaki",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "building": "roof",
+        "name": "Z",
+        "operator": "Z Energy",
+        "ref:linz:address_id": "2173494",
+        "website": "https://www.z.co.nz/find-a-station/station/z-highbrook/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.8726259,
+          -36.9377228
+        ]
+      },
+      "id": "way/147085578"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/212499672",
+        "amenity": "fuel",
+        "branch": "Stoke",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z",
+        "website": "https://www.z.co.nz/find-a-station/station/z-stoke/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          173.2250612,
+          -41.3190451
+        ]
+      },
+      "id": "node/212499672"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/217369781",
+        "addr:city": "Upper Hutt",
+        "addr:housenumber": "430",
+        "addr:postcode": "5018",
+        "addr:street": "Fergusson Drive",
+        "addr:suburb": "Heretaunga",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "building": "roof",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z",
+        "ref:linz:address_id": "463992",
+        "website": "https://www.z.co.nz/find-a-station/station/z-trentham/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.032558,
+          -41.1371546
+        ]
+      },
+      "id": "way/217369781"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/223530486",
+        "addr:housenumber": "6",
+        "addr:street": "Durham Avenue",
+        "addr:suburb": "Tamatea",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "building": "retail",
+        "name": "Z",
+        "operator": "Z",
+        "ref:linz:address_id": "618446",
+        "website": "https://www.z.co.nz/find-a-station/station/z-tamatea/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          176.8685758,
+          -39.5094591
+        ]
+      },
+      "id": "way/223530486"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/252843460",
+        "amenity": "fuel",
+        "branch": "Constable Street",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "name": "Z",
+        "operator": "Z Energy",
+        "website": "https://www.z.co.nz/find-a-station/station/z-constable-st/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.7818241,
+          -41.3131888
+        ]
+      },
+      "id": "way/252843460"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/256517685",
+        "addr:city": "Wellington",
+        "addr:housenumber": "155",
+        "addr:street": "Taranaki Street",
+        "amenity": "fuel",
+        "branch": "Taranaki Street",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "fuel:diesel": "no",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z",
+        "operator": "Z",
+        "website": "https://www.z.co.nz/find-a-station/station/z-taranaki-st/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.7765932,
+          -41.2971172
+        ]
+      },
+      "id": "way/256517685"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/260089558",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "building": "yes",
+        "name": "Z",
+        "website": "https://www.z.co.nz/find-a-station/station/z-mungavin-ave/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.8479039,
+          -41.1380494
+        ]
+      },
+      "id": "way/260089558"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/262491204",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "building": "yes",
+        "name": "Z Royal Oak",
+        "operator": "Z Energy",
+        "website": "https://www.z.co.nz/find-a-station/station/z-royal-oak/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.7737642,
+          -36.9112128
+        ]
+      },
+      "id": "way/262491204"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/265493584",
+        "addr:city": "Auckland",
+        "addr:housenumber": "770-774",
+        "addr:postcode": "1025",
+        "addr:street": "New North Road",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z",
+        "opening_hours": "24/7",
+        "operator": "Z Energy",
+        "website": "https://www.z.co.nz/find-a-station/station/z-mt-albert/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.725027,
+          -36.8805974
+        ]
+      },
+      "id": "node/265493584"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/275163552",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "compressed_air": "yes",
+        "name": "Z Miramar",
+        "operator": "Greenstone Energy Ltd",
+        "website": "https://www.z.co.nz/find-a-station/station/z-miramar/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.8139781,
+          -41.3149382
+        ]
+      },
+      "id": "way/275163552"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/283558746",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "name": "Z",
+        "operator": "Z Energy",
+        "website": "https://www.z.co.nz/find-a-station/station/z-sanson/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.4230339,
+          -40.2196513
+        ]
+      },
+      "id": "node/283558746"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/292803115",
+        "addr:city": "Christchurch",
+        "addr:country": "NZ",
+        "addr:housenumber": "2",
+        "addr:postcode": "8042",
+        "addr:street": "Russley Road",
+        "amenity": "fuel",
+        "branch": "Russley",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "name": "Z",
+        "opening_hours": "24/7",
+        "website": "https://www.z.co.nz/find-a-station/station/z-russley/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          172.5347836,
+          -43.5199871
+        ]
+      },
+      "id": "node/292803115"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/297335599",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "building": "yes",
+        "name": "Z",
+        "website": "https://www.z.co.nz/find-a-station/station/z-havelock-nth/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          176.876447,
+          -39.6690167
+        ]
+      },
+      "id": "way/297335599"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/303897793",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "building": "yes",
+        "name": "Z",
+        "operator": "Z Energy",
+        "website": "https://www.z.co.nz/find-a-station/station/z-greenlane/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.795768,
+          -36.8900439
+        ]
+      },
+      "id": "way/303897793"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/307261744",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "building": "roof",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z",
+        "website": "https://www.z.co.nz/find-a-station/station/z-sandringham/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.738952,
+          -36.8849312
+        ]
+      },
+      "id": "way/307261744"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/313184743",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "building": "yes",
+        "name": "Z",
+        "operator": "Z Energy",
+        "website": "https://www.z.co.nz/find-a-station/station/z-triangle/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.8003284,
+          -36.895055
+        ]
+      },
+      "id": "way/313184743"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/317610530",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "building": "yes",
+        "compressed_air": "yes",
+        "name": "Z",
+        "operator": "Z Energy",
+        "website": "https://www.z.co.nz/find-a-station/station/z-ponsonby/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.7474031,
+          -36.8586212
+        ]
+      },
+      "id": "way/317610530"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/320471406",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "name": "Z Energy Truck Stop",
+        "website": "https://www.z.co.nz/find-a-station/station/z-takaka-truck-stop/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          172.8072553,
+          -40.8565106
+        ]
+      },
+      "id": "node/320471406"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/322413851",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "check_date": "2023-06-30",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z",
+        "opening_hours": "24/7",
+        "operator": "Z",
+        "website": "https://www.z.co.nz/find-a-station/station/z-picton/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.0063956,
+          -41.2920556
+        ]
+      },
+      "id": "node/322413851"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/322700900",
+        "addr:city": "Blenheim",
+        "addr:housenumber": "165",
+        "addr:street": "Middle Renwick Road",
+        "amenity": "fuel",
+        "branch": "Springlands",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z",
+        "website": "https://www.z.co.nz/find-a-station/station/z-springlands/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          173.9302042,
+          -41.5096025
+        ]
+      },
+      "id": "node/322700900"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/329824986",
+        "addr:city": "Auckland",
+        "addr:housenumber": "742",
+        "addr:postcode": "2104",
+        "addr:street": "Great South Road",
+        "addr:suburb": "Manukau",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "building": "yes",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z Lakewood Court",
+        "ref:linz:address_id": "1227844",
+        "self_service": "yes",
+        "website": "https://www.z.co.nz/find-a-station/station/z-lakewood-court/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.8860974,
+          -36.9951159
+        ]
+      },
+      "id": "way/329824986"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/330481799",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "building": "yes",
+        "name": "Z Pakuranga",
+        "operator": "Z Energy",
+        "website": "https://www.z.co.nz/find-a-station/station/z-pakuranga/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.8994514,
+          -36.900096
+        ]
+      },
+      "id": "way/330481799"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/331132009",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z Johnsonville",
+        "website": "https://www.z.co.nz/find-a-station/station/z-johnsonville/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.8067223,
+          -41.2262212
+        ]
+      },
+      "id": "node/331132009"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/331164782",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "building": "yes",
+        "name": "Z",
+        "operator": "Z Energy",
+        "website": "https://www.z.co.nz/find-a-station/station/z-sylvia-park/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.8419387,
+          -36.9249199
+        ]
+      },
+      "id": "way/331164782"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/340871789",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "building": "yes",
+        "compressed_air": "yes",
+        "name": "Z",
+        "operator": "Z Energy",
+        "website": "https://www.z.co.nz/find-a-station/station/z-fairy-springs/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          176.23071,
+          -38.123165
+        ]
+      },
+      "id": "way/340871789"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/351553289",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "building": "roof",
+        "compressed_air": "yes",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z Kennedy Road",
+        "opening_hours": "24/7",
+        "website": "https://www.z.co.nz/find-a-station/station/z-kennedy-rd/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          176.9114801,
+          -39.4936579
+        ]
+      },
+      "id": "way/351553289"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/352013146",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "building": "yes",
+        "name": "Z",
+        "operator": "Z Energy",
+        "website": "https://www.z.co.nz/find-a-station/station/z-ormiston-rd/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.8909843,
+          -36.9613808
+        ]
+      },
+      "id": "way/352013146"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/355963331",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "building": "roof",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "layer": "1",
+        "name": "Z",
+        "website": "https://www.z.co.nz/find-a-station/station/z-stadium/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.2710649,
+          -37.780526
+        ]
+      },
+      "id": "way/355963331"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/356915410",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "building": "roof",
+        "name": "Z Roscommon Road",
+        "website": "https://www.z.co.nz/find-a-station/station/z-roscommon-rd/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.8533622,
+          -37.0036383
+        ]
+      },
+      "id": "way/356915410"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/363824139",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "building": "roof",
+        "compressed_air": "yes",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z",
+        "website": "https://www.z.co.nz/find-a-station/station/z-vic-corner/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.9141786,
+          -41.204035
+        ]
+      },
+      "id": "way/363824139"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/368855205",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "building": "roof",
+        "name": "Z Pioneer Highway",
+        "website": "https://www.z.co.nz/find-a-station/station/z-pioneer-hwy/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.5930972,
+          -40.3647048
+        ]
+      },
+      "id": "way/368855205"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/371298302",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "building": "roof",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z",
+        "website": "https://www.z.co.nz/find-a-station/station/z-hawera/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.2815589,
+          -39.5938532
+        ]
+      },
+      "id": "way/371298302"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/371467348",
+        "amenity": "fuel",
+        "branch": "Inglewood",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "check_date": "2024-01-10",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z",
+        "operator": "Z Energy",
+        "website": "https://www.z.co.nz/find-a-station/station/z-inglewood/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.2053955,
+          -39.1560135
+        ]
+      },
+      "id": "way/371467348"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/372916924",
+        "addr:housenumber": "21",
+        "addr:street": "Lee Road",
+        "addr:suburb": "Taradale",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "building": "retail",
+        "layer": "1",
+        "name": "Z Energy",
+        "operator": "Z",
+        "ref:linz:address_id": "610457",
+        "website": "https://www.z.co.nz/find-a-station/station/z-taradale/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          176.849406,
+          -39.5352286
+        ]
+      },
+      "id": "way/372916924"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/376944144",
+        "amenity": "fuel",
+        "branch": "Seaview",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "building": "yes",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z",
+        "website": "https://www.z.co.nz/find-a-station/station/z-seaview/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.9060485,
+          -41.2362948
+        ]
+      },
+      "id": "way/376944144"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/381878757",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "building": "yes",
+        "name": "Z Green Island",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          170.4314984,
+          -45.9013278
+        ]
+      },
+      "id": "way/381878757"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/382215832",
+        "addr:city": "Dunedin",
+        "addr:housenumber": "248",
+        "addr:street": "Kaikorai Valley Road",
+        "addr:suburb": "Bradford",
+        "amenity": "fuel",
+        "branch": "Valley",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "building": "yes",
+        "fuel:diesel": "yes",
+        "fuel:lpg": "yes",
+        "fuel:octane_91": "yes",
+        "name": "Z Kaikorai Valley",
+        "opening_hours": "24/7",
+        "ref:linz:address_id": "32461",
+        "sanitary_dump_station": "yes",
+        "website": "https://www.z.co.nz/find-a-station/station/z-valley/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          170.4720891,
+          -45.8725179
+        ]
+      },
+      "id": "way/382215832"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/384609298",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "building": "yes",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z Green Bay",
+        "opening_hours": "24/7",
+        "phone": "+64 9 827 3297",
+        "website": "https://www.z.co.nz/find-a-station/station/z-green-bay/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.6774846,
+          -36.931252
+        ]
+      },
+      "id": "way/384609298"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/384923480",
+        "addr:city": "Queenstown",
+        "addr:housenumber": "846",
+        "addr:street": "Frankton Road",
+        "addr:suburb": "Frankton",
+        "amenity": "fuel",
+        "branch": "Queenstown",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "building": "yes",
+        "compressed_air": "yes",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z",
+        "ref:linz:address_id": "3641",
+        "self_service": "yes",
+        "website": "https://www.z.co.nz/find-a-station/station/z-queenstown/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          168.716187,
+          -45.0171678
+        ]
+      },
+      "id": "way/384923480"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/386888307",
+        "addr:city": "Christchurch",
+        "addr:country": "NZ",
+        "addr:housenumber": "495",
+        "addr:street": "Brougham Street",
+        "amenity": "fuel",
+        "branch": "Brougham Street",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "building": "retail",
+        "compressed_air": "yes",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z",
+        "opening_hours": "24/7",
+        "phone": "+64 3 379 6421",
+        "website": "https://www.z.co.nz/find-a-station/station/z-brougham-st/",
+        "wheelchair": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          172.6572442,
+          -43.5481962
+        ]
+      },
+      "id": "way/386888307"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/389328343",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "name": "Z",
+        "website": "https://www.z.co.nz/find-a-station/station/z-kapiti/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.9974697,
+          -40.9066092
+        ]
+      },
+      "id": "way/389328343"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/394019394",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "building": "yes",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z",
+        "website": "https://www.z.co.nz/find-a-station/station/z-mana/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.8673254,
+          -41.0912921
+        ]
+      },
+      "id": "way/394019394"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/395248167",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "name": "Z Stafford Street"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          171.2561444,
+          -44.4011061
+        ]
+      },
+      "id": "node/395248167"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/398684726",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "building": "yes",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z",
+        "website": "https://www.z.co.nz/find-a-station/station/z-redwood/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          173.958327,
+          -41.5297475
+        ]
+      },
+      "id": "way/398684726"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/398684976",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "building": "roof",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z",
+        "website": "https://www.z.co.nz/find-a-station/station/z-grove-rd/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          173.9609593,
+          -41.5030662
+        ]
+      },
+      "id": "way/398684976"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/403542486",
+        "amenity": "fuel",
+        "branch": "Windsor",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "name": "Z",
+        "website": "https://www.z.co.nz/find-a-station/station/z-windsor/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          176.8491942,
+          -39.6479901
+        ]
+      },
+      "id": "way/403542486"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/409892913",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "building": "roof",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "layer": "1",
+        "name": "Z Waikuku",
+        "website": "https://www.z.co.nz/find-a-station/station/z-waikuku/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          172.6840341,
+          -43.295133
+        ]
+      },
+      "id": "way/409892913"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/409896589",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "building": "roof",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z Amberley",
+        "website": "https://www.z.co.nz/find-a-station/station/z-amberley/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          172.7300707,
+          -43.1504922
+        ]
+      },
+      "id": "way/409896589"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/466581217",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "building": "roof",
+        "fuel:diesel": "yes",
+        "fuel:lpg": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z",
+        "website": "https://www.z.co.nz/find-a-station/station/z-masterton/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.6583548,
+          -40.9502124
+        ]
+      },
+      "id": "way/466581217"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/468079716",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z Manurewa",
+        "website": "https://www.z.co.nz/find-a-station/station/z-manurewa/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.8996424,
+          -37.0236558
+        ]
+      },
+      "id": "node/468079716"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/480927433",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "building": "yes",
+        "name": "Z",
+        "operator": "Z Energy",
+        "website": "https://www.z.co.nz/find-a-station/station/z-heretaunga-st/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          176.8382903,
+          -39.6377267
+        ]
+      },
+      "id": "way/480927433"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/493569658",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "building": "roof",
+        "building:levels": "1",
+        "compressed_air": "yes",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "height": "4",
+        "layer": "1",
+        "name": "Z",
+        "website": "https://www.z.co.nz/find-a-station/station/z-turangi/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.8098913,
+          -38.9906768
+        ]
+      },
+      "id": "way/493569658"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/493792605",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "building": "roof",
+        "layer": "1",
+        "name": "Z Tauhara",
+        "self_service": "yes",
+        "website": "https://www.z.co.nz/find-a-station/station/z-tauhara/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          176.1090706,
+          -38.7043844
+        ]
+      },
+      "id": "way/493792605"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/494065885",
+        "amenity": "car_wash",
+        "automated": "yes",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.65805,
+          -40.9502343
+        ]
+      },
+      "id": "way/494065885"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/547325915",
+        "addr:city": "Christchurch",
+        "addr:country": "NZ",
+        "addr:housenumber": "40",
+        "addr:postcode": "8011",
+        "addr:street": "Moorhouse Avenue",
+        "amenity": "fuel",
+        "branch": "Moorhouse",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z",
+        "opening_hours": "24/7",
+        "toilets": "yes",
+        "website": "https://www.z.co.nz/find-a-station/station/z-moorhouse/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          172.6221549,
+          -43.540407
+        ]
+      },
+      "id": "way/547325915"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/560661698",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "name": "Z Kingsway",
+        "operator": "Z Energy",
+        "website": "https://www.z.co.nz/find-a-station/station/z-kingsway/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.9482841,
+          -37.061712
+        ]
+      },
+      "id": "node/560661698"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/569056272",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "name": "Z",
+        "operator": "Z Energy",
+        "website": "https://www.z.co.nz/find-a-station/station/z-avondale/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.6884868,
+          -36.8959773
+        ]
+      },
+      "id": "node/569056272"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/574203133",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "name": "Z",
+        "operator": "Z Energy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.6290887,
+          -36.8930723
+        ]
+      },
+      "id": "node/574203133"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/574207097",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "name": "Z",
+        "operator": "Z Energy",
+        "website": "https://www.z.co.nz/find-a-station/station/z-point-chev/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.7127754,
+          -36.8691509
+        ]
+      },
+      "id": "node/574207097"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/581811053",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "name": "Z",
+        "website": "https://www.z.co.nz/find-a-station/station/z-kaitaia/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          173.2624843,
+          -35.1125959
+        ]
+      },
+      "id": "node/581811053"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/632586292",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "building": "yes",
+        "name": "Z",
+        "operator": "Z Energy",
+        "website": "https://www.z.co.nz/find-a-station/station/z-kumeu/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.5526652,
+          -36.7742731
+        ]
+      },
+      "id": "way/632586292"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/646191090",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "building": "yes",
+        "layer": "2",
+        "name": "Z Broadway",
+        "website": "https://www.z.co.nz/find-a-station/station/z-broadway/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.810693,
+          -41.3256692
+        ]
+      },
+      "id": "way/646191090"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/646191092",
+        "amenity": "car_wash",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "building": "yes",
+        "name": "Z",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.810153,
+          -41.3256325
+        ]
+      },
+      "id": "way/646191092"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/648872457",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "compressed_air": "yes",
+        "name": "Z",
+        "operator": "Z Energy",
+        "website": "https://www.z.co.nz/find-a-station/station/z-quay-st/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.7735219,
+          -36.8446844
+        ]
+      },
+      "id": "node/648872457"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/659590239",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "name": "Z",
+        "operator": "Z Energy",
+        "website": "https://www.z.co.nz/find-a-station/station/z-new-lynn/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.6813584,
+          -36.9027718
+        ]
+      },
+      "id": "node/659590239"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/690344339",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "compressed_air": "yes",
+        "name": "Z",
+        "website": "https://www.z.co.nz/find-a-station/station/z-andy-bay/",
+        "wikimedia_commons": "File:Z Andy Bay petrol station, 10 Feb 2026.jpg Archivo Discusión",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          170.5031391,
+          -45.8928241
+        ]
+      },
+      "id": "way/690344339"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/694157278",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "name": "Z",
+        "operator": "Z Energy",
+        "website": "https://www.z.co.nz/find-a-station/station/z-morrinsville/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.5266612,
+          -37.6587978
+        ]
+      },
+      "id": "node/694157278"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/694186475",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "name": "Z",
+        "operator": "Z Energy",
+        "website": "https://www.z.co.nz/find-a-station/station/z-putaruru/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.7802492,
+          -38.047745
+        ]
+      },
+      "id": "node/694186475"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/695117975",
+        "addr:housenumber": "11",
+        "addr:postcode": "2120",
+        "addr:street": "Stadium Drive",
+        "addr:suburb": "Pukekohe",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z Pukekohe",
+        "ref:linz:address_id": "1253413",
+        "website": "https://www.z.co.nz/find-a-station/station/z-pukekohe/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.9084552,
+          -37.199902
+        ]
+      },
+      "id": "node/695117975"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/718025001",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "compressed_air": "no",
+        "fuel:HGV_diesel": "yes",
+        "fuel:diesel": "yes",
+        "name": "Z",
+        "self_service": "yes",
+        "website": "https://www.z.co.nz/find-a-station/station/z-kaikoura-truck-stop/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          173.6793929,
+          -42.3909209
+        ]
+      },
+      "id": "way/718025001"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/722836092",
+        "addr:city": "Auckland",
+        "addr:housenumber": "33-35",
+        "addr:street": "Taharoto Road",
+        "addr:suburb": "Takapuna",
+        "amenity": "fuel",
+        "branch": "Lakeside",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "fuel:diesel": "yes",
+        "fuel:lpg": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "landuse": "retail",
+        "name": "Z",
+        "opening_hours": "24/7",
+        "operator": "Z",
+        "phone": "+64 9 486 6103",
+        "ref:linz:address_id": "1122791",
+        "self_service": "yes",
+        "website": "https://www.z.co.nz/find-a-station/station/z-lakeside/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.7569405,
+          -36.7854738
+        ]
+      },
+      "id": "way/722836092"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/723480700",
+        "amenity": "fuel",
+        "branch": "Te Atatu",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z",
+        "official_name": "Z Te Atatu",
+        "opening_hours": "24/7",
+        "operator": "Z Energy",
+        "phone": "+64 9 834 6309",
+        "website": "https://www.z.co.nz/find-a-station/station/z-te-atatu/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.6506808,
+          -36.8521023
+        ]
+      },
+      "id": "node/723480700"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/755756628",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "building": "yes",
+        "compressed_air": "yes",
+        "name": "Z",
+        "operator": "Z Energy",
+        "website": "https://www.z.co.nz/find-a-station/station/z-silverdale/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.6681312,
+          -36.6233941
+        ]
+      },
+      "id": "way/755756628"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/760408431",
+        "addr:city": "Christchurch",
+        "addr:housenumber": "7",
+        "addr:postcode": "8061",
+        "addr:street": "Marshland Road",
+        "amenity": "fuel",
+        "branch": "Shirley",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z",
+        "self_service": "yes",
+        "website": "https://www.z.co.nz/find-a-station/station/z-shirley/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          172.6624577,
+          -43.5076309
+        ]
+      },
+      "id": "way/760408431"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/777393197",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "name": "Z",
+        "operator": "Z Energy",
+        "website": "https://www.z.co.nz/find-a-station/station/z-harris-rd/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.8967616,
+          -36.9297625
+        ]
+      },
+      "id": "node/777393197"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/777400825",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "name": "Z",
+        "operator": "Z Energy",
+        "website": "https://www.z.co.nz/find-a-station/station/z-botany-downs/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.9108237,
+          -36.9310021
+        ]
+      },
+      "id": "node/777400825"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/800052662",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "name": "Z Airport",
+        "operator": "Z",
+        "website": "https://www.z.co.nz/find-a-station/station/z-tom-pearce-dr/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.7972352,
+          -36.9992988
+        ]
+      },
+      "id": "node/800052662"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/812335423",
+        "amenity": "fuel",
+        "branch": "Karaka",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "building": "yes",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z Karaka",
+        "opening_hours": "24/7",
+        "operator": "Z Energy",
+        "phone": "+64 9 915 1367",
+        "website": "https://www.z.co.nz/find-a-station/station/z-karaka/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.925696,
+          -37.0735036
+        ]
+      },
+      "id": "way/812335423"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/813221446",
+        "addr:housenumber": "83",
+        "addr:postcode": "2104",
+        "addr:street": "Wiri Station Road",
+        "addr:suburb": "Wiri",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z Wiri Station Road",
+        "ref:linz:address_id": "1211788",
+        "website": "https://www.z.co.nz/find-a-station/station/z-wiri-station-rd/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.8712721,
+          -36.9995391
+        ]
+      },
+      "id": "node/813221446"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/825137031",
+        "addr:city": "Christchurch",
+        "addr:country": "NZ",
+        "addr:housenumber": "253",
+        "addr:postcode": "8024",
+        "addr:street": "Barrington Street",
+        "amenity": "fuel",
+        "branch": "Barrington",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "compressed_air": "yes",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z",
+        "opening_hours": "Mo-Su 06:00-00:00",
+        "phone": "+64 3 332 4670",
+        "smoking": "no",
+        "toilets": "yes",
+        "website": "https://www.z.co.nz/find-a-station/station/z-barrington/",
+        "wheelchair": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          172.6185726,
+          -43.5573068
+        ]
+      },
+      "id": "way/825137031"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/838854083",
+        "addr:city": "Christchurch",
+        "addr:country": "NZ",
+        "addr:housenumber": "68",
+        "addr:postcode": "8042",
+        "addr:street": "Curletts Road",
+        "addr:suburb": "Sockburn",
+        "amenity": "fuel",
+        "branch": "Curletts Road",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "building": "yes",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z Curletts Road",
+        "opening_hours": "24/7",
+        "operator": "Z",
+        "phone": "+64 3 348 5155",
+        "ref:linz:address_id": "177098",
+        "self_service": "yes",
+        "website": "https://www.z.co.nz/find-a-station/station/z-curletts-rd/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          172.5678394,
+          -43.5385049
+        ]
+      },
+      "id": "way/838854083"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/860959267",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z Takanini",
+        "opening_hours": "24/7",
+        "phone": "+64 9 299 9804",
+        "website": "https://www.z.co.nz/find-a-station/station/z-takanini/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.9200711,
+          -37.0435035
+        ]
+      },
+      "id": "node/860959267"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/861039948",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "name": "Z",
+        "operator": "Z Energy",
+        "website": "https://www.z.co.nz/find-a-station/station/z-sunnybrae/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.7472676,
+          -36.7923473
+        ]
+      },
+      "id": "node/861039948"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/861102792",
+        "addr:city": "Auckland",
+        "addr:housenumber": "413",
+        "addr:postcode": "0630",
+        "addr:street": "Beach Road",
+        "addr:suburb": "Mairangi Bay",
+        "amenity": "fuel",
+        "branch": "Mairangi Bay",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "compressed_air": "yes",
+        "name": "Z",
+        "official_name": "Z Mairangi Bay",
+        "opening_hours": "06:00-23:00",
+        "operator": "Z Energy",
+        "phone": "+64 9 478 2563",
+        "ref:linz:address_id": "1106574",
+        "website": "https://www.z.co.nz/find-a-station/station/z-mairangi-bay/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.7537706,
+          -36.7389653
+        ]
+      },
+      "id": "node/861102792"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/868481766",
+        "addr:city": "Hamilton",
+        "addr:housenumber": "116",
+        "addr:postcode": "3216",
+        "addr:street": "Grey Street",
+        "addr:suburb": "Hamilton East",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "name": "Z Eastside",
+        "opening_hours": "24/7",
+        "operator": "Z Energy",
+        "ref:linz:address_id": "692529",
+        "website": "https://www.z.co.nz/find-a-station/station/z-eastside/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.2967165,
+          -37.7992327
+        ]
+      },
+      "id": "node/868481766"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/871807093",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "fuel:diesel": "yes",
+        "name": "Z - Rotorua Truck Stop",
+        "opening_hours": "24/7",
+        "operator": "Z",
+        "website": "https://www.z.co.nz/find-a-station/station/z-rotorua-truck-stop/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          176.2636621,
+          -38.1545503
+        ]
+      },
+      "id": "way/871807093"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/873457300",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "compressed_air": "yes",
+        "name": "Z Glenpark",
+        "operator": "Z Energy",
+        "website": "https://www.z.co.nz/find-a-station/station/z-glen-park/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.7242561,
+          -36.794232
+        ]
+      },
+      "id": "node/873457300"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/875612186",
+        "amenity": "fuel",
+        "branch": "Greville Road",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "U-GO",
+        "official_name": "U-GO Greville Road",
+        "opening_hours": "24/7",
+        "operator": "Z Energy",
+        "phone": "+64 9 478 2710",
+        "self_service": "yes",
+        "website": "https://www.ugoselfserve.co.nz/find-ugo/station/u-go-greville-rd"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.7240055,
+          -36.7300283
+        ]
+      },
+      "id": "node/875612186"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/884242798",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "compressed_air": "yes",
+        "name": "Z",
+        "operator": "Z Energy",
+        "website": "https://www.z.co.nz/find-a-station/station/z-whangaparaoa/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.739257,
+          -36.6344077
+        ]
+      },
+      "id": "node/884242798"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/884291455",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "compressed_air": "yes",
+        "name": "Z",
+        "operator": "Z Energy",
+        "website": "https://www.z.co.nz/find-a-station/station/z-manly/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.7634942,
+          -36.6319157
+        ]
+      },
+      "id": "node/884291455"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/888026402",
+        "alt_name": "Z Westgate",
+        "amenity": "fuel",
+        "branch": "Massey North",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z Massey North",
+        "opening_hours": "24/7",
+        "phone": "+64 9 832 0369",
+        "website": "https://www.z.co.nz/find-a-station/station/z-massey-north/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.6087741,
+          -36.8214104
+        ]
+      },
+      "id": "node/888026402"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/888026420",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z Lincoln Road",
+        "operator": "Z Energy",
+        "website": "https://www.z.co.nz/find-a-station/station/z-lincoln-rd/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.629306,
+          -36.8588492
+        ]
+      },
+      "id": "node/888026420"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/891829383",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "building": "roof",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z",
+        "opening_hours": "24/7",
+        "website": "https://www.z.co.nz/find-a-station/station/z-sawyers-arms/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          172.570295,
+          -43.4710381
+        ]
+      },
+      "id": "way/891829383"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/896686403",
+        "addr:street": "Lunn Avenue",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "name": "U Go",
+        "operator": "Z Energy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.8407451,
+          -36.8962669
+        ]
+      },
+      "id": "node/896686403"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/933286681",
+        "addr:city": "Geraldine",
+        "addr:housenumber": "44",
+        "addr:postcode": "7930",
+        "addr:street": "Waihi Terrace",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z",
+        "self_service": "yes",
+        "website": "https://www.z.co.nz/find-a-station/station/z-geraldine/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          171.2424258,
+          -44.0899952
+        ]
+      },
+      "id": "way/933286681"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/937592550",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "name": "Z",
+        "operator": "Z Energy",
+        "website": "https://www.z.co.nz/find-a-station/station/z-ti-rakau-dr/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.8951463,
+          -36.9262092
+        ]
+      },
+      "id": "node/937592550"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/951825064",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z",
+        "ref:linz:building_id": "1343521",
+        "source": "esri/LINZ_NZ_Buildings",
+        "website": "https://www.z.co.nz/find-a-station/station/z-dinsdale/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.2473006,
+          -37.7951451
+        ]
+      },
+      "id": "way/951825064"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/971964568",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "compressed_air": "yes",
+        "name": "Z",
+        "operator": "Z Energy",
+        "website": "https://www.z.co.nz/find-a-station/station/z-northcross/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.7282293,
+          -36.7099408
+        ]
+      },
+      "id": "node/971964568"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/995887203",
+        "amenity": "fuel",
+        "branch": "Milford",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "compressed_air": "yes",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z Milford",
+        "opening_hours": "Mo-Su 06:00-23:00",
+        "operator": "Z Energy",
+        "phone": "+64 9 410 7058",
+        "website": "https://www.z.co.nz/find-a-station/station/z-milford/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.7563606,
+          -36.7638189
+        ]
+      },
+      "id": "node/995887203"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1015496188",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "name": "Z",
+        "operator": "Z",
+        "website": "https://www.z.co.nz/find-a-station/station/z-karamu-rd/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          176.8560437,
+          -39.6366269
+        ]
+      },
+      "id": "node/1015496188"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1016765579",
+        "access": "yes",
+        "amenity": "charging_station",
+        "brand": "Z",
+        "capacity": "2",
+        "fee": "yes",
+        "name": "Z",
+        "network": "Z Energy",
+        "network:wikidata": "Q8063337",
+        "operator": "Z Energy",
+        "operator:wikidata": "Q8063337",
+        "payment:credit_cards": "yes",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes",
+        "socket:chademo": "1",
+        "socket:chademo:output": "100 kW",
+        "socket:type2_combo": "1",
+        "socket:type2_combo:output": "100 kW",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.738073,
+          -36.8100341
+        ]
+      },
+      "id": "way/1016765579"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1017025267",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "compressed_air": "yes",
+        "name": "Z",
+        "opening_hours": "Mo-Su,PH 00:00-00:00",
+        "operator": "Z",
+        "roof:shape": "flat",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          172.6680674,
+          -43.5433326
+        ]
+      },
+      "id": "way/1017025267"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1034075516",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "name": "Z",
+        "operator": "Z Energy",
+        "website": "https://www.z.co.nz/find-a-station/station/z-ellerslie/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.8245109,
+          -36.8982098
+        ]
+      },
+      "id": "node/1034075516"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1037450528",
+        "amenity": "fuel",
+        "branch": "Caroline Bay",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "building": "yes",
+        "compressed_air": "no",
+        "name": "Z",
+        "opening_hours": "24/7",
+        "operator": "Z Energy",
+        "website": "https://www.z.co.nz/find-a-station/station/z-caroline-bay/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          171.247591,
+          -44.3936226
+        ]
+      },
+      "id": "way/1037450528"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1050436467",
+        "addr:city": "Lower Hutt",
+        "addr:housenumber": "834",
+        "addr:postcode": "5011",
+        "addr:street": "High Street",
+        "addr:suburb": "Boulcott",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "building": "roof",
+        "layer": "1",
+        "name": "Z High Street",
+        "operator": "Z",
+        "phone": "+64 4 567 7473",
+        "ref:linz:address_id": "428376",
+        "website": "https://www.z.co.nz/find-a-station/station/z-high-street/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.9373586,
+          -41.1978948
+        ]
+      },
+      "id": "way/1050436467"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1080858470",
+        "addr:city": "Tauranga",
+        "addr:housenumber": "253B",
+        "addr:postcode": "3110",
+        "addr:street": "State Highway 2",
+        "addr:suburb": "Bethlehem",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "landuse": "retail",
+        "name": "Z Bethlehem",
+        "opening_hours": "24/7",
+        "ref:linz:address_id": "1626714",
+        "website": "https://www.z.co.nz/find-a-station/station/z-bethlehem/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          176.1070264,
+          -37.6961272
+        ]
+      },
+      "id": "way/1080858470"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1084140600",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "landuse": "retail",
+        "name": "Z Eleventh Avenue",
+        "opening_hours": "24/7",
+        "toilets": "yes",
+        "website": "https://www.z.co.nz/find-a-station/station/z-11th-ave/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          176.1590078,
+          -37.6978857
+        ]
+      },
+      "id": "way/1084140600"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1084621388",
+        "amenity": "fuel",
+        "branch": "Huntly",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "name": "Z",
+        "operator": "Z Energy",
+        "website": "https://www.z.co.nz/find-a-station/station/z-huntly/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.1583552,
+          -37.5675205
+        ]
+      },
+      "id": "node/1084621388"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1084908997",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "name": "Z",
+        "operator": "Z Energy",
+        "website": "https://www.z.co.nz/find-a-station/station/z-ngaruawahia/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.1496691,
+          -37.668325
+        ]
+      },
+      "id": "node/1084908997"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1085061659",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "name": "Z",
+        "name:en": "Z",
+        "name:ja": "Zマタマタ店",
+        "website": "https://www.z.co.nz/find-a-station/station/z-matamata/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.7704542,
+          -37.807987
+        ]
+      },
+      "id": "node/1085061659"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1086350575",
+        "addr:city": "Kawerau",
+        "addr:housenumber": "6",
+        "addr:postcode": "3127",
+        "addr:street": "Islington Street",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "landuse": "retail",
+        "name": "Z Kawerau",
+        "website": "https://www.z.co.nz/find-a-station/station/z-kawerau/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          176.7019983,
+          -38.0849489
+        ]
+      },
+      "id": "way/1086350575"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1088752645",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "building": "yes",
+        "name": "Z Fifteenth Avenue",
+        "shop": "convenience",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          176.164923,
+          -37.7109887
+        ]
+      },
+      "id": "way/1088752645"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1088752646",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "landuse": "retail",
+        "name": "Z Fifteenth Avenue",
+        "opening_hours": "24/7",
+        "website": "https://www.z.co.nz/find-a-station/station/z-15th-ave/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          176.1649288,
+          -37.7108992
+        ]
+      },
+      "id": "way/1088752646"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1090953309",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "name": "Z",
+        "website": "https://www.z.co.nz/find-a-station/station/z-whakatane/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          176.982639,
+          -37.95876
+        ]
+      },
+      "id": "way/1090953309"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1092221377",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "name": "Z",
+        "website": "https://www.z.co.nz/find-a-station/station/z-fenton-st/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          176.2532686,
+          -38.141982
+        ]
+      },
+      "id": "way/1092221377"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1093287039",
+        "addr:housenumber": "500",
+        "addr:street": "Maunganui Road",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "compressed_air": "yes",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z Central Parade",
+        "name:en": "Z Central Parade",
+        "name:ja": "Zセントラルパレード",
+        "opening_hours": "Mo-Su 05:00-22:00",
+        "website": "https://www.z.co.nz/find-a-station/station/z-central-parade/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          176.1995859,
+          -37.6541996
+        ]
+      },
+      "id": "way/1093287039"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1097876351",
+        "amenity": "fuel",
+        "branch": "Waiouru",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "fuel:HGV_diesel": "yes",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z",
+        "official_name": "Z Waiouru",
+        "website": "https://www.z.co.nz/find-a-station/station/z-waiouru/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.6693211,
+          -39.47934
+        ]
+      },
+      "id": "way/1097876351"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1097885593",
+        "addr:city": "Wellington",
+        "addr:housenumber": "174",
+        "addr:postcode": "6011",
+        "addr:street": "Vivian Street",
+        "amenity": "fuel",
+        "branch": "Vivian St",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "compressed_air": "yes",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "fuel:octane_98": "yes",
+        "name": "Z",
+        "opening_hours": "24/7",
+        "self_service": "yes",
+        "website": "https://www.z.co.nz/find-a-station/station/z-vivian-st/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.7744369,
+          -41.2943493
+        ]
+      },
+      "id": "way/1097885593"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1098997297",
+        "addr:housenumber": "81",
+        "addr:street": "Hewletts Road",
+        "addr:suburb": "Mount Maunganui",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z Hewletts Road",
+        "ref:linz:address_id": "801008",
+        "website": "https://www.z.co.nz/find-a-station/station/z-hewletts-rd/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          176.1992537,
+          -37.6661412
+        ]
+      },
+      "id": "way/1098997297"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1107677484",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "check_date": "2025-12-14",
+        "fuel:diesel": "yes",
+        "fuel:electricity": "yes",
+        "fuel:octane_95": "yes",
+        "fuel:octane_98": "yes",
+        "name": "Z Ashburton",
+        "opening_hours": "24/7",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "+64 3 308 1612",
+        "website": "https://www.z.co.nz/find-a-station/station/z-ashburton/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          171.7451946,
+          -43.9048124
+        ]
+      },
+      "id": "way/1107677484"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1108087939",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "car_wash": "yes",
+        "compressed_air": "yes",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z Palm Beach",
+        "opening_hours": "24/7",
+        "toilets": "yes",
+        "website": "https://www.z.co.nz/find-a-station/station/z-palm-beach/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          176.2843629,
+          -37.6991122
+        ]
+      },
+      "id": "way/1108087939"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1110707431",
+        "addr:housenumber": "167",
+        "addr:postcode": "3493",
+        "addr:street": "Victoria Road",
+        "addr:suburb": "Cambridge",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "landuse": "retail",
+        "name": "Z Hautapu",
+        "opening_hours": "24/7",
+        "phone": "+64 7 260 4047",
+        "ref:linz:address_id": "1638360",
+        "website": "https://www.z.co.nz/find-a-station/station/z-hautapu/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.4567528,
+          -37.8669824
+        ]
+      },
+      "id": "way/1110707431"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1120007902",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "fuel:HGV_diesel": "yes",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z - Petone",
+        "website": "https://www.z.co.nz/find-a-station/station/z-petone/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.868814,
+          -41.2228305
+        ]
+      },
+      "id": "way/1120007902"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1120010813",
+        "addr:housenumber": "1193",
+        "addr:postcode": "5018",
+        "addr:street": "Fergusson Drive",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "name": "Z",
+        "website": "https://www.z.co.nz/find-a-station/station/z-remutaka/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.0972719,
+          -41.1089128
+        ]
+      },
+      "id": "way/1120010813"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1129274641",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "name": "Z",
+        "website": "https://www.z.co.nz/find-a-station/station/z-richmond/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          173.1800795,
+          -41.3374247
+        ]
+      },
+      "id": "node/1129274641"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1159345961",
+        "addr:housenumber": "1",
+        "addr:street": "Hudson Road",
+        "addr:suburb": "Warkworth",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "building": "yes",
+        "name": "Z",
+        "ref:linz:address_id": "1485649",
+        "website": "https://www.z.co.nz/find-a-station/station/z-warkworth/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.6511713,
+          -36.392572
+        ]
+      },
+      "id": "way/1159345961"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1166287488",
+        "addr:city": "Christchurch",
+        "addr:country": "NZ",
+        "addr:postcode": "8011",
+        "addr:street": "Linwood Avenue",
+        "amenity": "fuel",
+        "branch": "Linwood",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "compressed_air": "yes",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z",
+        "opening_hours": "24/7",
+        "operator": "Z Energy",
+        "phone": "+64 3 389 8115",
+        "website": "https://www.z.co.nz/find-a-station/station/z-linwood/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          172.6713352,
+          -43.5327396
+        ]
+      },
+      "id": "node/1166287488"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1168152934",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "name": "Z Hornby Truck Stop",
+        "self_service": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          172.5175444,
+          -43.5547731
+        ]
+      },
+      "id": "way/1168152934"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1168152935",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "name": "Z Hornby Truck Stop",
+        "self_service": "yes",
+        "start_date": "2023-05-26",
+        "website": "https://www.z.co.nz/find-a-station/station/z-hornby-north-truck-stop/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          172.5293452,
+          -43.536672
+        ]
+      },
+      "id": "way/1168152935"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1169536522",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "building": "roof",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "layer": "1",
+        "name": "Z London Street",
+        "website": "https://www.z.co.nz/find-a-station/station/z-london-st/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.0353286,
+          -39.9266466
+        ]
+      },
+      "id": "way/1169536522"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1175808279",
+        "amenity": "car_wash",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.6507148,
+          -36.852452
+        ]
+      },
+      "id": "way/1175808279"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1195220905",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "building": "roof",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z Rolleston",
+        "website": "https://www.z.co.nz/find-a-station/station/z-rolleston/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          172.3772713,
+          -43.5917039
+        ]
+      },
+      "id": "way/1195220905"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1260669293",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "check_date": "2024-01-07",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z Taupo",
+        "website": "https://www.z.co.nz/find-a-station/station/z-taupo/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          176.0740294,
+          -38.6892884
+        ]
+      },
+      "id": "node/1260669293"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1315824519",
+        "access": "yes",
+        "amenity": "charging_station",
+        "brand": "Z",
+        "capacity": "3",
+        "fee": "yes",
+        "name": "Z",
+        "network": "Z Energy",
+        "network:wikidata": "Q8063337",
+        "operator": "Z Energy",
+        "operator:wikidata": "Q8063337",
+        "payment:credit_cards": "yes",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes",
+        "socket:chademo": "1",
+        "socket:chademo:output": "50 kW",
+        "socket:type2_combo": "3",
+        "socket:type2_combo:output": "150 kW",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.6503653,
+          -36.8523756
+        ]
+      },
+      "id": "way/1315824519"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1317210868",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z",
+        "website": "https://www.z.co.nz/find-a-station/station/z-palmerston/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          170.7145512,
+          -45.4854552
+        ]
+      },
+      "id": "node/1317210868"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1317989199",
+        "access": "yes",
+        "amenity": "charging_station",
+        "brand": "Z",
+        "capacity": "3",
+        "fee": "yes",
+        "name": "Z",
+        "network": "Z Energy",
+        "network:wikidata": "Q8063337",
+        "operator": "Z Energy",
+        "operator:wikidata": "Q8063337",
+        "payment:credit_cards": "yes",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes",
+        "socket:chademo": "1",
+        "socket:chademo:output": "50 kWh",
+        "socket:type2_combo": "3",
+        "socket:type2_combo:output": "150 kWh",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.6531505,
+          -36.9003052
+        ]
+      },
+      "id": "way/1317989199"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1361626618",
+        "addr:city": "Auckland",
+        "addr:housenumber": "222-236",
+        "addr:postcode": "1072",
+        "addr:street": "Apirana Avenue",
+        "addr:suburb": "Glen Innes",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "compressed_air": "yes",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z Glen Innes",
+        "opening_hours": "24/7",
+        "operator": "Z Energy",
+        "phone": "+64 9 528 0922",
+        "self_service": "yes",
+        "website": "https://www.z.co.nz/find-a-station/station/z-glen-innes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.8546247,
+          -36.877035
+        ]
+      },
+      "id": "way/1361626618"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1394379678",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "check_date": "2025-08-07",
+        "compressed_air": "yes",
+        "name": "Z",
+        "operator": "Z Energy",
+        "website": "https://www.z.co.nz/find-a-station/station/z-cambridge/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.4669601,
+          -37.8914385
+        ]
+      },
+      "id": "node/1394379678"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1423661694",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_98": "yes",
+        "name": "Z Kaikohe",
+        "website": "https://www.z.co.nz/find-a-station/station/z-kaikohe/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          173.8035457,
+          -35.4060295
+        ]
+      },
+      "id": "node/1423661694"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1446008703",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "name": "Z",
+        "operator": "Z Energy",
+        "website": "https://www.z.co.nz/find-a-station/station/z-ngatea/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.4908198,
+          -37.2763027
+        ]
+      },
+      "id": "node/1446008703"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1446104749",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "name": "Z",
+        "operator": "Z Energy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.6681229,
+          -37.3772188
+        ]
+      },
+      "id": "node/1446104749"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1456854482",
+        "amenity": "charging_station",
+        "brand": "Z",
+        "capacity": "4",
+        "covered": "no",
+        "fee": "yes",
+        "network": "Z Energy",
+        "network:wikidata": "Q8063337",
+        "operator": "Z Energy",
+        "operator:wikidata": "Q8063337",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.6581999,
+          -40.9499761
+        ]
+      },
+      "id": "way/1456854482"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1503537769",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "name": "Z Albany",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.6981426,
+          -36.7252701
+        ]
+      },
+      "id": "way/1503537769"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1577832777",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "name": "Z",
+        "operator": "Z Energy",
+        "website": "https://www.z.co.nz/find-a-station/station/z-te-kuiti/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.1526087,
+          -38.323944
+        ]
+      },
+      "id": "node/1577832777"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1612854865",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "name": "Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          176.8272489,
+          -37.9758261
+        ]
+      },
+      "id": "node/1612854865"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1613876514",
+        "addr:city": "Whitianga",
+        "addr:housenumber": "85",
+        "addr:postcode": "3510",
+        "addr:street": "Albert Street",
+        "addr:suburb": "Whitianga",
+        "amenity": "fuel",
+        "branch": "Whitianga",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z",
+        "ref:linz:address_id": "730801",
+        "website": "https://www.z.co.nz/find-a-station/station/z-whitianga/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.7038639,
+          -36.836175
+        ]
+      },
+      "id": "node/1613876514"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1613905509",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z Te Puke",
+        "website": "https://www.z.co.nz/find-a-station/station/z-te-puke/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          176.3305789,
+          -37.7852146
+        ]
+      },
+      "id": "node/1613905509"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1764042251",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "name": "Z Gladstone",
+        "website": "https://www.z.co.nz/find-a-station/station/z-gladstone/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          168.3475792,
+          -46.393171
+        ]
+      },
+      "id": "node/1764042251"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1764042253",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "name": "Z Dee Street",
+        "website": "https://www.z.co.nz/find-a-station/station/z-dee-st/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          168.3469224,
+          -46.4051112
+        ]
+      },
+      "id": "node/1764042253"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1871178721",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z Levin",
+        "website": "https://www.z.co.nz/find-a-station/station/z-levin/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.2763905,
+          -40.6319537
+        ]
+      },
+      "id": "node/1871178721"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1886346233",
+        "addr:housenumber": "16",
+        "addr:postcode": "2123",
+        "addr:street": "Kitchener Road",
+        "addr:suburb": "Waiuku",
+        "amenity": "fuel",
+        "branch": "Waiuku",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "compressed_air": "yes",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z",
+        "official_name": "Z Waiuku",
+        "opening_hours": "24/7",
+        "phone": "+64 9 235 2082",
+        "ref:linz:address_id": "1321086",
+        "website": "https://www.z.co.nz/find-a-station/station/z-waiuku/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.7325843,
+          -37.2489064
+        ]
+      },
+      "id": "node/1886346233"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1975719871",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "name": "Z",
+        "operator": "Z Energy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.6633145,
+          -36.4003168
+        ]
+      },
+      "id": "node/1975719871"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1985211479",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "check_date": "2024-01-10",
+        "name": "Z Huatoki",
+        "old_name": "Z Courtenay Street",
+        "website": "https://www.z.co.nz/find-a-station/station/z-courtenay-st/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.0768803,
+          -39.0576614
+        ]
+      },
+      "id": "node/1985211479"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1985214108",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z",
+        "website": "https://www.z.co.nz/find-a-station/station/z-waiwhakaiho/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.1103916,
+          -39.0511233
+        ]
+      },
+      "id": "node/1985214108"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2007769635",
+        "amenity": "fuel",
+        "branch": "Kepa Road",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "compressed_air": "yes",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z",
+        "official_name": "Z Kepa Road",
+        "opening_hours": "24/7",
+        "operator": "Z Energy",
+        "phone": "+64 9 521 0294",
+        "website": "https://www.z.co.nz/find-a-station/station/z-kepa-rd/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.8231096,
+          -36.8613452
+        ]
+      },
+      "id": "node/2007769635"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2089764908",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z Moonshine Road"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.0393185,
+          -41.1246289
+        ]
+      },
+      "id": "node/2089764908"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2100478305",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "compressed_air": "yes",
+        "name": "Z",
+        "operator": "Z Energy",
+        "website": "https://www.z.co.nz/find-a-station/station/z-wairoa/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          177.4179808,
+          -39.0357049
+        ]
+      },
+      "id": "node/2100478305"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2110020604",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "fuel:diesel": "yes",
+        "name": "Z Marton",
+        "source": "local_knowledge",
+        "website": "https://www.z.co.nz/find-a-station/station/z-marton/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.3789883,
+          -40.0652599
+        ]
+      },
+      "id": "node/2110020604"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2112860415",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "name": "Z",
+        "operator": "Z Energy",
+        "website": "https://www.z.co.nz/find-a-station/station/z-te-irirangi-dr/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.8975517,
+          -36.9774056
+        ]
+      },
+      "id": "node/2112860415"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2118620317",
+        "addr:housenumber": "453",
+        "addr:postcode": "5010",
+        "addr:street": "Hutt Road",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "compressed_air": "yes",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z",
+        "website": "https://www.z.co.nz/find-a-station/station/z-hutt-rd/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.8872663,
+          -41.2141942
+        ]
+      },
+      "id": "node/2118620317"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2241669898",
+        "amenity": "fuel",
+        "branch": "Belfast",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z",
+        "opening_hours": "24/7",
+        "operator": "Z Energy",
+        "phone": "+64 3 323 8715",
+        "website": "https://www.z.co.nz/find-a-station/station/z-belfast/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          172.6277422,
+          -43.4517228
+        ]
+      },
+      "id": "node/2241669898"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2261449097",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "name": "Z",
+        "website": "https://www.z.co.nz/find-a-station/station/z-greymouth/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          171.212567,
+          -42.4494322
+        ]
+      },
+      "id": "node/2261449097"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2303547271",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "fuel:HGV_diesel": "yes",
+        "fuel:diesel": "yes",
+        "name": "Z",
+        "self_service": "yes",
+        "website": "https://www.z.co.nz/find-a-station/station/z-nelson-port-truck-stop/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          173.2751469,
+          -41.2645355
+        ]
+      },
+      "id": "node/2303547271"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2312656827",
+        "addr:city": "Hamilton",
+        "addr:housenumber": "243",
+        "addr:postcode": "3214",
+        "addr:street": "Peachgrove Road",
+        "addr:suburb": "Fairfield",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "compressed_air": "yes",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z Five Cross Roads",
+        "opening_hours": "24/7",
+        "ref:linz:address_id": "685922",
+        "website": "https://www.z.co.nz/find-a-station/station/z-five-cross-roads/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.2929808,
+          -37.7725274
+        ]
+      },
+      "id": "node/2312656827"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2319102211",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "check_date": "2025-10-08",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z Awakeri",
+        "self_service": "yes",
+        "website": "https://www.z.co.nz/find-a-station/station/z-awakeri/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          176.8910501,
+          -37.9986787
+        ]
+      },
+      "id": "node/2319102211"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2400012898",
+        "amenity": "fuel",
+        "branch": "Mosgiel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "name": "Z",
+        "opening_hours": "Mo-Su,PH 00:00+",
+        "website": "https://www.z.co.nz/find-a-station/station/z-mosgiel/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          170.3540955,
+          -45.8861947
+        ]
+      },
+      "id": "node/2400012898"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2602806680",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "compressed_air": "yes",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z Pukete",
+        "opening_hours": "24/7",
+        "website": "https://www.z.co.nz/find-a-station/station/z-pukete/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.2410353,
+          -37.7523242
+        ]
+      },
+      "id": "node/2602806680"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2650950746",
+        "amenity": "fuel",
+        "branch": "Bombay",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "compressed_air": "yes",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z Bombay",
+        "opening_hours": "24/7",
+        "website": "https://www.z.co.nz/find-a-station/station/z-bombay/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.9835232,
+          -37.1919787
+        ]
+      },
+      "id": "node/2650950746"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2686304366",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z",
+        "website": "https://www.z.co.nz/find-a-station/station/z-taipa/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          173.4655922,
+          -34.9959238
+        ]
+      },
+      "id": "node/2686304366"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2689132030",
+        "addr:housename": "Z Merrilands",
+        "addr:housenumber": "202-204",
+        "addr:postcode": "4312",
+        "addr:street": "Mangorei Road",
+        "amenity": "fuel",
+        "branch": "Merrilands",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "compressed_air": "yes",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_98": "yes",
+        "name": "Z",
+        "website": "https://www.z.co.nz/find-a-station/station/z-merrilands/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.1028706,
+          -39.0668911
+        ]
+      },
+      "id": "node/2689132030"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2689442815",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "name": "Z",
+        "operator": "Z Energy",
+        "website": "https://www.z.co.nz/find-a-station/station/z-kensington/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.3218983,
+          -35.7084697
+        ]
+      },
+      "id": "node/2689442815"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2742939895",
+        "addr:city": "Christchurch",
+        "addr:country": "NZ",
+        "addr:housenumber": "210",
+        "addr:street": "Harewood Road",
+        "amenity": "fuel",
+        "branch": "Bishopdale",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z",
+        "opening_hours": "24/7",
+        "phone": "+64 3 359 4681",
+        "website": "https://www.z.co.nz/find-a-station/station/z-bishopdale/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          172.5930428,
+          -43.4898107
+        ]
+      },
+      "id": "node/2742939895"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2742994317",
+        "addr:country": "NZ",
+        "addr:housenumber": "52",
+        "addr:street": "Strowan Road",
+        "amenity": "fuel",
+        "branch": "Bryndwr",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z",
+        "opening_hours": "Mo-Su 06:00-23:00",
+        "phone": "+64 3 355 8902",
+        "website": "https://www.z.co.nz/find-a-station/station/z-bryndwr/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          172.6076296,
+          -43.5105435
+        ]
+      },
+      "id": "node/2742994317"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2743141075",
+        "addr:city": "Christchurch",
+        "addr:country": "NZ",
+        "addr:housenumber": "417",
+        "addr:postcode": "8023",
+        "addr:street": "Ferry Road",
+        "addr:suburb": "Woolston",
+        "amenity": "fuel",
+        "branch": "Woolston",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "compressed_air": "yes",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z Woolston",
+        "opening_hours": "24/7",
+        "operator": "Z Energy",
+        "phone": "+64 3 389 2292",
+        "ref:linz:address_id": "252581",
+        "self_service": "yes",
+        "website": "https://www.z.co.nz/find-a-station/station/z-woolston/",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          172.6681029,
+          -43.5433569
+        ]
+      },
+      "id": "node/2743141075"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2743141096",
+        "addr:city": "Christchurch",
+        "addr:country": "NZ",
+        "addr:housenumber": "250",
+        "addr:street": "Lincoln Road",
+        "amenity": "fuel",
+        "branch": "Addington",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z",
+        "opening_hours": "24/7",
+        "phone": "+64 3 338 8795",
+        "website": "https://www.z.co.nz/find-a-station/station/z-addington/",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          172.6085758,
+          -43.5458225
+        ]
+      },
+      "id": "node/2743141096"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2743408574",
+        "addr:city": "Christchurch",
+        "addr:country": "NZ",
+        "addr:postcode": "8042",
+        "addr:street": "Carmen Road",
+        "amenity": "fuel",
+        "branch": "Hornby",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z",
+        "opening_hours": "24/7",
+        "phone": "+64 3 349 9129",
+        "website": "https://www.z.co.nz/find-a-station/station/z-hornby/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          172.5286455,
+          -43.5381532
+        ]
+      },
+      "id": "node/2743408574"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2808306584",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "name": "Z",
+        "operator": "Z Energy",
+        "website": "https://www.z.co.nz/find-a-station/station/z-stratford/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.2834435,
+          -39.3373543
+        ]
+      },
+      "id": "node/2808306584"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2898893001",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "name": "Z",
+        "operator": "Z",
+        "website": "https://www.z.co.nz/find-a-station/station/z-kamo/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.3015791,
+          -35.6842393
+        ]
+      },
+      "id": "node/2898893001"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3120151445",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z Kilbirnie",
+        "opening_hours": "Mo-Su 06:00-22:00",
+        "website": "https://www.z.co.nz/find-a-station/station/z-kilbirnie/",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.7944069,
+          -41.3200541
+        ]
+      },
+      "id": "node/3120151445"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3262740107",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "name": "Z",
+        "website": "https://www.z.co.nz/find-a-station/station/z-otahuhu/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.8432835,
+          -36.9409701
+        ]
+      },
+      "id": "node/3262740107"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3359207646",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "fuel:octane_91": "yes",
+        "name": "Z",
+        "operator": "Z Energy",
+        "website": "https://www.z.co.nz/find-a-station/station/z-hunters-corner/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.8631342,
+          -36.9666617
+        ]
+      },
+      "id": "node/3359207646"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3577963849",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "name": "Z",
+        "operator": "Z Energy",
+        "website": "https://www.z.co.nz/find-a-station/station/z-clevedon/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.0371553,
+          -36.9935019
+        ]
+      },
+      "id": "node/3577963849"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3593740876",
+        "amenity": "fuel",
+        "branch": "Constellation Drive",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "compressed_air": "yes",
+        "name": "Z",
+        "official_name": "Z Constellation Drive",
+        "opening_hours": "Mo-Fr 05:00-11:00 open \"store\"; Sa,Su 06:00-11:00 open \"store\" || 24/7 open \"pump\"",
+        "operator": "Z Energy",
+        "phone": "+64 9 478 3715",
+        "website": "https://www.z.co.nz/find-a-station/station/z-constellation-dr/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.7317161,
+          -36.7483042
+        ]
+      },
+      "id": "node/3593740876"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3640397787",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "compressed_air": "yes",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z",
+        "opening_hours": "24/7",
+        "website": "https://www.z.co.nz/find-a-station/station/z-cromwell/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          169.1988548,
+          -45.0365111
+        ]
+      },
+      "id": "node/3640397787"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3658370792",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "name": "Z",
+        "operator": "Z Energy",
+        "website": "https://www.z.co.nz/find-a-station/station/z-browns-rd/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.8620182,
+          -37.0178045
+        ]
+      },
+      "id": "node/3658370792"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3841945309",
+        "addr:city": "Balclutha",
+        "addr:postcode": "9230",
+        "addr:street": "High Street",
+        "amenity": "fuel",
+        "branch": "Balclutha",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "name": "Z",
+        "opening_hours": "06:00-22:00",
+        "phone": "+64 3 418 2700",
+        "website": "https://www.z.co.nz/find-a-station/station/z-balclutha/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          169.7312775,
+          -46.2413925
+        ]
+      },
+      "id": "node/3841945309"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3915536499",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "car_wash": "yes",
+        "compressed_air": "yes",
+        "fuel:diesel": "yes",
+        "fuel:octane_92": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z Frankton",
+        "opening_hours": "24/7",
+        "operator": "Z Energy Limited",
+        "self_service": "yes",
+        "shop": "convenience",
+        "toilets": "yes",
+        "website": "https://www.z.co.nz/find-a-station/station/z-frankton/",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.2557274,
+          -37.7862528
+        ]
+      },
+      "id": "node/3915536499"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3915536501",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "check_date": "2024-04-11",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z",
+        "operator": "Z Energy",
+        "website": "https://www.z.co.nz/find-a-station/station/z-te-awamutu/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.3247302,
+          -38.0148866
+        ]
+      },
+      "id": "node/3915536501"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3931753188",
+        "addr:housenumber": "47",
+        "addr:street": "Porowini Avenue",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "name": "U-GO",
+        "opening_hours": "24/7",
+        "operator": "Z Energy",
+        "self_service": "yes",
+        "website": "https://ugoselfserve.co.nz/find-ugo/station/u-go-porowini"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.3223827,
+          -35.7322707
+        ]
+      },
+      "id": "node/3931753188"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4087891555",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "compressed_air": "yes",
+        "name": "Z",
+        "operator": "Z Energy",
+        "website": "https://www.z.co.nz/find-a-station/station/z-henderson-valley/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.6229913,
+          -36.8917302
+        ]
+      },
+      "id": "node/4087891555"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4127575756",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z",
+        "website": "https://www.z.co.nz/find-a-station/station/z-terrace-end/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.6293251,
+          -40.3484702
+        ]
+      },
+      "id": "node/4127575756"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4134508706",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "compressed_air": "yes",
+        "name": "Z",
+        "website": "https://www.z.co.nz/find-a-station/station/z-oamaru/",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          170.9678827,
+          -45.0982728
+        ]
+      },
+      "id": "node/4134508706"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4394446159",
+        "addr:housenumber": "387",
+        "addr:street": "Wairere Drive",
+        "addr:suburb": "Avalon",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "name": "Z Rotokauri",
+        "ref:linz:address_id": "2010460",
+        "website": "https://www.z.co.nz/find-a-station/station/z-rotokauri/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.2306827,
+          -37.7541127
+        ]
+      },
+      "id": "node/4394446159"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4522975813",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "name": "Z",
+        "website": "https://www.z.co.nz/find-a-station/station/z-gisborne-service-station/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          178.0208342,
+          -38.6630879
+        ]
+      },
+      "id": "node/4522975813"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4650800859",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "name": "Z",
+        "operator": "Z Energy",
+        "website": "https://www.z.co.nz/find-a-station/station/z-dublin-st/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.04962,
+          -39.9214522
+        ]
+      },
+      "id": "node/4650800859"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5291156636",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z Papakura North",
+        "website": "https://www.z.co.nz/find-a-station/station/z-papakura-north/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.9299651,
+          -37.0506516
+        ]
+      },
+      "id": "node/5291156636"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5376759820",
+        "addr:city": "Hamilton",
+        "addr:housenumber": "124-126",
+        "addr:postcode": "3206",
+        "addr:street": "Kahikatea Drive",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "fuel:diesel": "yes",
+        "fuel:octane_92": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z Tuhikaramea",
+        "old_name": "Z Kahikatea Drive;Z Dinsdale",
+        "opening_hours": "24/7",
+        "operator": "Z Energy Limited",
+        "self_service": "yes",
+        "website": "https://www.z.co.nz/find-a-station/station/z-kahikatea-drive/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.2711005,
+          -37.8076562
+        ]
+      },
+      "id": "node/5376759820"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5628325586",
+        "amenity": "charging_station",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "motor_vehicle": "yes",
+        "network": "Z Energy",
+        "network:wikidata": "Q8063337",
+        "operator": "Z Energy",
+        "operator:wikidata": "Q8063337",
+        "socket:chademo": "1",
+        "socket:type2_combo": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.9104003,
+          -36.9311806
+        ]
+      },
+      "id": "node/5628325586"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5843116430",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "name": "Z",
+        "operator": "Z Energy",
+        "website": "https://www.z.co.nz/find-a-station/station/z-waikumete/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.6531799,
+          -36.9001685
+        ]
+      },
+      "id": "node/5843116430"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6219478685",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "name": "Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          176.8702836,
+          -39.4369712
+        ]
+      },
+      "id": "node/6219478685"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7404431692",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "name": "Z Aviation - Dargaville"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          173.8942238,
+          -35.9397035
+        ]
+      },
+      "id": "node/7404431692"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7679096427",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "name": "Z Truck Stop",
+        "website": "https://www.z.co.nz/find-a-station/station/z-whangarei-truck-stop/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.3319653,
+          -35.7415509
+        ]
+      },
+      "id": "node/7679096427"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7842966582",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "fuel:HGV_diesel": "yes",
+        "fuel:diesel": "yes",
+        "name": "Z Seaview Diesel",
+        "operator": "Z Energy",
+        "self_service": "yes",
+        "website": "https://www.z.co.nz/find-a-station/station/z-seaview-truck-stop/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.9085862,
+          -41.242874
+        ]
+      },
+      "id": "node/7842966582"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7988990475",
+        "advertising": "totem",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "lit": "yes",
+        "operator": "Z",
+        "visibility": "area"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          172.6186636,
+          -43.5571964
+        ]
+      },
+      "id": "node/7988990475"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8071132488",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "name": "Z Aviation"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          177.3023917,
+          -38.0233197
+        ]
+      },
+      "id": "node/8071132488"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8474154717",
+        "addr:housenumber": "186",
+        "addr:postcode": "7400",
+        "addr:street": "High Street",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z",
+        "opening_hours": "Mo-Su 06:00-00:00",
+        "self_service": "yes",
+        "website": "https://www.z.co.nz/find-a-station/station/z-rangiora/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          172.5901124,
+          -43.303844
+        ]
+      },
+      "id": "node/8474154717"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9072391329",
+        "access": "no",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "hgv": "designated",
+        "name": "Z Truck Stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.8730832,
+          -41.076501
+        ]
+      },
+      "id": "node/9072391329"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9377901714",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "fuel:HGV_diesel": "yes",
+        "fuel:adblue": "yes",
+        "fuel:diesel": "yes",
+        "name": "Z Palmerston North Truck Stop",
+        "opening_hours": "24/7",
+        "self_service": "yes",
+        "website": "https://www.z.co.nz/find-a-station/station/z-palmerston-north-truck-stop/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.6265847,
+          -40.3229863
+        ]
+      },
+      "id": "node/9377901714"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9685320421",
+        "access": "no",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "hgv": "designated",
+        "name": "Z Truck Stop",
+        "website": "https://www.z.co.nz/find-a-station/station/z-silverdale-truck-stop/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.6841763,
+          -36.6223322
+        ]
+      },
+      "id": "node/9685320421"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9934755193",
+        "advertising": "totem",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "operator": "Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          176.1591144,
+          -37.6981212
+        ]
+      },
+      "id": "node/9934755193"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9954025123",
+        "advertising": "totem",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "operator": "Z Energy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          176.7019746,
+          -38.0851879
+        ]
+      },
+      "id": "node/9954025123"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10292290294",
+        "access": "no",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "hgv": "designated",
+        "name": "Z Truck Stop",
+        "website": "https://www.z.co.nz/find-a-station/station/z-sylvia-park-truck-stop/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.8362839,
+          -36.9238579
+        ]
+      },
+      "id": "node/10292290294"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10749626424",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "fuel:HGV_diesel": "yes",
+        "fuel:adblue": "yes",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "no",
+        "fuel:octane_95": "no",
+        "name": "Z",
+        "self_service": "yes",
+        "website": "https://www.z.co.nz/find-a-station/station/z-turangi-truck-stop/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.8028682,
+          -38.9983579
+        ]
+      },
+      "id": "node/10749626424"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10864300606",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "name": "Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          169.1754688,
+          -45.047342
+        ]
+      },
+      "id": "node/10864300606"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10921156100",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "fuel:HGV_diesel": "yes",
+        "fuel:diesel": "yes",
+        "name": "Z",
+        "self_service": "yes",
+        "website": "https://www.z.co.nz/find-a-station/station/z-levin-truck-stop/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.2712909,
+          -40.6350015
+        ]
+      },
+      "id": "node/10921156100"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10996528935",
+        "addr:housenumber": "106",
+        "addr:street": "Rutherford Street",
+        "amenity": "fuel",
+        "branch": "Rutherford",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "check_date": "2025-03-25",
+        "compressed_air": "yes",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Z",
+        "opening_hours": "24/7",
+        "phone": "+64 3 546 6626",
+        "website": "https://www.z.co.nz/find-a-station/station/z-rutherford/",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          173.280549,
+          -41.2746928
+        ]
+      },
+      "id": "node/10996528935"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11155247746",
+        "access": "yes",
+        "amenity": "charging_station",
+        "brand": "Z",
+        "capacity": "2",
+        "charge": "0.69 NZD/kWh",
+        "fee": "yes",
+        "network": "Z Energy",
+        "network:wikidata": "Q8063337",
+        "operator": "Z Energy",
+        "operator:wikidata": "Q8063337",
+        "socket:chademo": "1",
+        "socket:type2_combo": "1",
+        "socket:type2_combo:output": "75 kW"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.0065444,
+          -41.2923055
+        ]
+      },
+      "id": "node/11155247746"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11445473168",
+        "addr:city": "Hamilton",
+        "addr:housenumber": "33",
+        "addr:postcode": "3204",
+        "addr:street": "Lincoln Street",
+        "addr:suburb": "Frankton",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "name": "Z Hamilton truck stop",
+        "operator": "Z Energy Limited",
+        "self_service": "yes",
+        "website": "https://www.z.co.nz/find-a-station/station/z-hamilton-truck-stop/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.2552473,
+          -37.7856642
+        ]
+      },
+      "id": "node/11445473168"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12179405660",
+        "access": "yes",
+        "brand": "Z",
+        "capacity": "1",
+        "man_made": "charge_point",
+        "name": "Z",
+        "network": "Z Energy",
+        "network:wikidata": "Q8063337",
+        "operator": "Z Energy",
+        "operator:wikidata": "Q8063337",
+        "socket:chademo": "1",
+        "socket:chademo:output": "50 kW",
+        "socket:type2_combo": "1",
+        "socket:type2_combo:output": "50 kW"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.6503318,
+          -36.8523453
+        ]
+      },
+      "id": "node/12179405660"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12179405661",
+        "access": "yes",
+        "brand": "Z",
+        "capacity": "2",
+        "man_made": "charge_point",
+        "name": "Z",
+        "network": "Z Energy",
+        "network:wikidata": "Q8063337",
+        "operator": "Z Energy",
+        "operator:wikidata": "Q8063337",
+        "socket:type2_combo": "2",
+        "socket:type2_combo:output": "150 kW"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.6503284,
+          -36.8523849
+        ]
+      },
+      "id": "node/12179405661"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12197878671",
+        "access": "yes",
+        "brand": "Z",
+        "capacity": "1",
+        "man_made": "charge_point",
+        "name": "Z",
+        "network": "Z Energy",
+        "network:wikidata": "Q8063337",
+        "operator": "Z Energy",
+        "operator:wikidata": "Q8063337",
+        "socket:chademo": "1",
+        "socket:chademo:output": "50 kW",
+        "socket:type2_combo": "1",
+        "socket:type2_combo:output": "50 kW"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.6531289,
+          -36.9002836
+        ]
+      },
+      "id": "node/12197878671"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12197878672",
+        "access": "yes",
+        "brand": "Z",
+        "capacity": "2",
+        "man_made": "charge_point",
+        "name": "Z",
+        "network": "Z Energy",
+        "network:wikidata": "Q8063337",
+        "operator": "Z Energy",
+        "operator:wikidata": "Q8063337",
+        "socket:type2_combo": "2",
+        "socket:type2_combo:output": "150 kW"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.6531645,
+          -36.9003435
+        ]
+      },
+      "id": "node/12197878672"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12709436412",
+        "advertising": "totem",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.7566246,
+          -36.7854486
+        ]
+      },
+      "id": "node/12709436412"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12996766698",
+        "advertising": "totem",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.919515,
+          -37.043232
+        ]
+      },
+      "id": "node/12996766698"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13615918677",
+        "addr:street": "Neilson Street",
+        "amenity": "fuel",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "brand:wikipedia": "en:Z Energy",
+        "name": "U-go",
+        "opening_hours": "24/7",
+        "operator": "self serve"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.7944526,
+          -36.9264424
+        ]
+      },
+      "id": "node/13615918677"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13673252805",
+        "advertising": "totem",
+        "brand": "Z",
+        "brand:wikidata": "Q8063337",
+        "lit": "yes",
+        "operator": "Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          172.6678523,
+          -43.5434782
+        ]
+      },
+      "id": "node/13673252805"
+    }
+  ]
+}
