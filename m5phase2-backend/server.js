@@ -3,10 +3,10 @@ import express from "express";
 import cors from "cors";
 import { connectDB } from "./src/db/connect.js";
 
-import entryRoutes from "./src/routes/entryRoutes.js";
-import planRouteRoutes from "./src/routes/planRouteRoutes.js";
+// import entryRoutes from "./src/routes/entryRoutes.js";
+// import planRouteRoutes from "./src/routes/planRouteRoutes.js";
 import nearbyStationRoutes from "./src/routes/nearbyStationRoutes.js";
-import filterPreferencesRoutes from "./src/routes/filterPreferencesRoutes.js";
+// import filterPreferencesRoutes from "./src/routes/filterPreferencesRoutes.js";
 
 const app = express();
 
@@ -26,10 +26,10 @@ app.get("/api/health", (req, res) => {
   });
 });
 
-app.use("/api/entrypage", entryRoutes);
-app.use("/api/plan-routes", planRouteRoutes);
-app.use("/api/nearby-stations", nearbyStationRoutes);
-app.use("/api/filter-preferences", filterPreferencesRoutes);
+// app.use("/api/entrypage", entryRoutes);
+// app.use("/api/plan-routes", planRouteRoutes);
+app.use("/api/stations", nearbyStationRoutes);
+// app.use("/api/filter-preferences", filterPreferencesRoutes);
 
 async function startServer() {
   try {

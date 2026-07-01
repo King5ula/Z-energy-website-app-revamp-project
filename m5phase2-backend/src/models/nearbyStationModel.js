@@ -35,10 +35,15 @@ const StationSchema = new mongoose.Schema({
   hasAtm: { type: Boolean, default: false },
   hasClubPlus: { type: Boolean, default: false },
 
-  // --- FUEL TYPES ---
+  // --- FUEL TYPES AVAILABILITY SWITCHES---
   hasZxPremium: { type: Boolean, default: true },
   hasZ91Unleaded: { type: Boolean, default: true },
   hasZDiesel: { type: Boolean, default: false },
+
+  // --- FUEL PRICES ---
+  priceZ91Unleaded: { type: Number, default: 0.00 },
+  priceZxPremium: { type: Number, default: 0.00 },
+  priceZDiesel: { type: Number, default: 0.00 },
 
   location: {
     type: { type: String, enum: ['Point'], required: true },
