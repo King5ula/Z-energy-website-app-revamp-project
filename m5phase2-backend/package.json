@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "seed": "node src/scripts/seed.js",
+    "update-prices": "node src/scripts/updatePrices.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
