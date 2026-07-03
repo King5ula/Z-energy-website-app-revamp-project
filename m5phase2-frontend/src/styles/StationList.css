@@ -1,0 +1,143 @@
+.station-list {
+  flex: 1;
+  overflow-y: auto;
+  background: #ffffff;
+}
+
+.list-section {
+  padding: 1.5rem;
+}
+
+.list-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid #f5f5f5;
+}
+
+.list-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.list-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+}
+
+.list-item:hover {
+  border-color: #e63946;
+  background: #fff5f6;
+  transform: translateX(4px);
+  box-shadow: 0 2px 8px rgba(230, 57, 70, 0.1);
+}
+
+.item-name {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.item-count {
+  font-size: 0.8125rem;
+  color: #666666;
+  background: #f5f5f5;
+  padding: 0.25rem 0.625rem;
+  border-radius: 12px;
+}
+
+.station-item {
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.station-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.station-name {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.station-address {
+  font-size: 0.8125rem;
+  color: #666666;
+}
+
+.item-arrow {
+  font-size: 1.25rem;
+  color: #e63946;
+  font-weight: 600;
+}
+
+.loading-message {
+  padding: 2rem;
+  text-align: center;
+  color: #666666;
+  font-size: 0.9375rem;
+}
+
+.no-results {
+  padding: 2rem;
+  text-align: center;
+  color: #666666;
+  font-size: 0.9375rem;
+}
+
+.station-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.station-list::-webkit-scrollbar-track {
+  background: #f5f5f5;
+}
+
+.station-list::-webkit-scrollbar-thumb {
+  background: #e0e0e0;
+  border-radius: 3px;
+}
+
+.station-list::-webkit-scrollbar-thumb:hover {
+  background: #cccccc;
+}
+
+@media (max-width: 768px) {
+  .list-section {
+    padding: 1rem;
+  }
+
+  .list-title {
+    font-size: 1rem;
+  }
+
+  .list-item {
+    padding: 0.875rem;
+  }
+
+  .item-name,
+  .station-name {
+    font-size: 0.875rem;
+  }
+
+  .item-count,
+  .station-address {
+    font-size: 0.75rem;
+  }
+}
