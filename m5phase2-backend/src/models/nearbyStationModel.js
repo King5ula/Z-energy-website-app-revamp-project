@@ -1,6 +1,7 @@
 //Mongoose Schema
 import mongoose from 'mongoose';
 
+// this basically defines the structure and validation rules for station documents
 const StationSchema = new mongoose.Schema({
   name: { type: String, required: true },
   officialName: { type: String },
