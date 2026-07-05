@@ -1,10 +1,13 @@
 import { useState } from "react";
 import "./App.css";
+import NearbyStation from "./pages/NearbyStation/NearbyStation";
 
 function App() {
-  const [count, setCount] = useState(0);
+  
 
-  return <></>;
+  return <>
+  <NearbyStation />
+  </>;
 }
 
 export default App;

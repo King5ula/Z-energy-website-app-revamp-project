@@ -6,22 +6,38 @@ export const getAllStations = async (req, res) => {
 
         let searchRules = {};
 
-        if(req.query.lng && req.query.lat) {
-            searchRules.location = {
+        if(searchWord && searchWord.trim().length > 0) {
+           const cleanSearch =searchWord.trim();
+
+           searchRules.$or = [
+            {name: { $regex: cleanSearch, $options: 'i'} },
+            {officialName: { $regex: cleanSearch, $options: 'i'} },
+            {website: { $regex: cleanSearch, $options: 'i'} }
+           ];
+        }
+         if (req.query.lng && req.query.lat) {
+      const parsedLng = Number(req.query.lng);
+      const parsedLat = Number(req.query.lat);
+
+        if (parsedLng >= -180 && parsedLng <= 180 && parsedLat >= -90 && parsedLat <= 90) {
+        searchRules.location = {
                 $near: {
                     $geometry: {
                         type: 'Point',
-                        coordinates: [Number(req.query.lng), Number(req.query.lat)]
+                        coordinates: [parsedLng, parsedLat]
                     },
-                    $maxDistance: 20000
+                    $maxDistance: 15000
                 }
             };
         }
-
-        const stations = await Station.find(searchRules);
-
-        res.status(200).json(stations);
-    } catch (error) {
-        res.status(500).json({ message: 'Server error'});
     }
-};
+
+    //Query MongoDB
+    const stations = await Station.find(searchRules)
+    return res.status(200).json(stations);
+
+} catch (error) {
+    console.error('Backend DB Error:', error.message);
+    return res.status(200).json([]);
+    }
+}
