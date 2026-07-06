@@ -1,0 +1,379 @@
+/* Navbar Component - Themeable - Z Energy Design System */
+
+.navbar {
+  background: var(--bg-primary);
+  box-shadow: var(--shadow-sm);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.navbar-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+
+/* Left Side */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navbar-logo {
+  height: 50px;
+  width: auto;
+  max-width: 80px;
+  object-fit: contain;
+  object-position: left center;
+}
+
+/* Tab Switcher */
+.tab-switcher {
+  display: flex;
+  gap: 0;
+  background: transparent;
+}
+
+.tab-button {
+  padding: 10px 24px;
+  border: none;
+  background: transparent;
+  color: var(--text-primary);
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'DM Sans', sans-serif;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-radius: 8px;
+}
+
+.tab-button.active {
+  background: var(--gradient-orange);
+  color: #ffffff;
+}
+
+.tab-button:hover:not(.active) {
+  background: rgba(255, 101, 35, 0.1);
+}
+
+/* Right Side */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'DM Sans', sans-serif;
+  cursor: pointer;
+  padding: 8px 16px;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #ff6523;
+  background: transparent;
+  border: none;
+}
+
+/* Icon Buttons - 30x30px */
+.icon-button,
+.theme-toggle-button {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+}
+
+.icon-button:hover,
+.theme-toggle-button:hover {
+  background: rgba(255, 101, 35, 0.1);
+  border: none;
+}
+
+/* Icon Images */
+.navbar-icon-img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+/* Login Button */
+.login-button {
+  padding: 10px 24px;
+  background: var(--gradient-orange);
+  color: #ffffff;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'DM Sans', sans-serif;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.2s ease;
+}
+
+.login-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(255, 101, 35, 0.3);
+}
+
+/* Secondary Navigation */
+.navbar-secondary {
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border-color);
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  height: 60px;
+}
+
+.nav-menu-item {
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'DM Sans', sans-serif;
+  cursor: pointer;
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.2s ease;
+}
+
+.nav-menu-item:hover {
+  color: #ff6523;
+  background: transparent;
+  border: none;
+}
+
+/* Icons - 30x30px each */
+
+/* User Icon */
+.icon-user {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  display: inline-block;
+}
+
+.icon-user::before {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border: 2.5px solid #ffffff;
+  border-radius: 50%;
+  top: 4px;
+  left: 9px;
+}
+
+.icon-user::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 10px;
+  border: 2.5px solid #ffffff;
+  border-radius: 10px 10px 0 0;
+  border-bottom: none;
+  bottom: 4px;
+  left: 5px;
+}
+
+/* Login Button - Simple Image */
+.login-button-image {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-button-image:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.login-button-image img {
+  height: 48px;
+  width: auto;
+  display: block;
+}
+
+/* Legacy login buttons - hide */
+.login-button,
+.login-button-new {
+  display: none;
+}
+
+/* Theme toggle button - hide old one */
+.theme-toggle-button {
+  display: none;
+}
+
+/* Chevron Down Icon */
+.icon-chevron-down {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  display: inline-block;
+}
+
+.icon-chevron-down::before {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg);
+  top: 2px;
+  left: 4px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .navbar-container {
+    padding: 0 1.5rem;
+  }
+
+  .nav-menu {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    padding: 0 1rem;
+    height: 70px;
+  }
+
+  .navbar-logo {
+    height: 40px;
+  }
+
+  .tab-switcher {
+    display: none;
+  }
+
+  .navbar-right {
+    gap: 1rem;
+  }
+
+  .nav-link {
+    display: none;
+  }
+
+  .nav-menu {
+    overflow-x: auto;
+    gap: 1rem;
+  }
+
+  .nav-menu-item {
+    font-size: 14px;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-container {
+    padding: 0 0.75rem;
+  }
+
+  .login-button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .icon-button {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+/* Theme Toggle Icons */
+.theme-icon {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  display: inline-block;
+}
+
+/* Sun Icon (for dark mode - clicking shows sun to switch to light) */
+.icon-sun::before {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border: 2.5px solid #ff6523;
+  border-radius: 50%;
+  top: 5px;
+  left: 5px;
+}
+
+.icon-sun::after {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background:
+    linear-gradient(#ff6523 0 0) center/2px 6px,
+    linear-gradient(#ff6523 0 0) center/6px 2px,
+    linear-gradient(45deg, #ff6523 0 0) center/2px 6px,
+    linear-gradient(-45deg, #ff6523 0 0) center/2px 6px;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+}
+
+/* Moon Icon (for light mode - clicking shows moon to switch to dark) */
+.icon-moon::before {
+  content: '';
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #ff6523;
+  top: 3px;
+  left: 3px;
+}
+
+.icon-moon::after {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--bg-primary);
+  top: 1px;
+  left: 7px;
+}

@@ -1,0 +1,333 @@
+/* Entry Page Styles */
+.entry-page {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(135deg, #FF5C00 0%, #FF7A33 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Consent Modal Styles */
+.consent-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease;
+}
+
+.consent-modal {
+  background: var(--bg-elevated);
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  max-width: 450px;
+  width: 90%;
+  text-align: center;
+  animation: slideUp 0.3s ease;
+  border: 1px solid var(--border-color);
+}
+
+.consent-modal h2 {
+  color: var(--text-primary);
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.consent-modal p {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.consent-modal-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 0.875rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #FF5C00 0%, #FF7A33 100%);
+  color: var(--text-primary);
+  box-shadow: 0 4px 12px rgba(255, 92, 0, 0.3);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #CC4A00 0%, #FF5C00 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(255, 92, 0, 0.4);
+}
+
+.btn-secondary {
+  background: var(--bg-tertiary);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-color);
+}
+
+.btn-secondary:hover {
+  background: var(--bg-elevated);
+  color: var(--text-primary);
+}
+
+/* Action Overlay Styles */
+.action-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease;
+}
+
+.action-card {
+  background: var(--bg-elevated);
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  max-width: 500px;
+  width: 90%;
+  animation: slideUp 0.3s ease;
+  border: none; /* Remove orange border */
+}
+
+.action-title {
+  color: #ff6523; /* Z Energy Orange for "Where are you heading?" */
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.action-options {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.action-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem;
+  background: var(--bg-secondary);
+  border: 2px solid var(--border-color);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+}
+
+.action-option:hover {
+  background: var(--bg-tertiary);
+  border-color: #FF5C00;
+  box-shadow: 0 4px 12px rgba(255, 92, 0, 0.25);
+}
+
+.option-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+}
+
+.option-icon-img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.option-text {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.option-input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  font-size: 1rem;
+  color: var(--text-primary);
+  outline: none;
+}
+
+.option-input::placeholder {
+  color: var(--text-muted);
+}
+
+.option-arrow {
+  font-size: 1.5rem;
+  color: #FF5C00;
+  font-weight: bold;
+}
+
+/* Route Form Styles */
+.route-form {
+  max-width: 550px;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  color: #FF5C00;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.back-button:hover {
+  background: rgba(255, 92, 0, 0.1);
+  border-radius: 8px;
+}
+
+.back-arrow {
+  font-size: 1.25rem;
+}
+
+.route-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.input-group {
+  position: relative;
+}
+
+.route-input {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid var(--border-color);
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+.route-input:focus {
+  outline: none;
+  border-color: #FF5C00;
+  box-shadow: 0 0 0 3px rgba(255, 92, 0, 0.2);
+}
+
+.route-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.btn-filter,
+.btn-configure {
+  flex: 1;
+  padding: 1rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-filter {
+  background: var(--bg-tertiary);
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 1px solid var(--border-color);
+}
+
+.btn-filter:hover {
+  background: var(--bg-elevated);
+  border-color: #FF5C00;
+}
+
+.filter-icon {
+  font-size: 1.25rem;
+}
+
+.btn-configure {
+  background: linear-gradient(135deg, #FF5C00 0%, #FF7A33 100%);
+  color: var(--text-primary);
+  box-shadow: 0 4px 12px rgba(255, 92, 0, 0.3);
+}
+
+.btn-configure:hover {
+  background: linear-gradient(135deg, #CC4A00 0%, #FF5C00 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(255, 92, 0, 0.4);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .consent-modal,
+  .action-card {
+    padding: 2rem;
+    margin: 1rem;
+  }
+
+  .consent-modal h2,
+  .action-title {
+    font-size: 1.5rem;
+  }
+
+  .route-actions {
+    flex-direction: column;
+  }
+}

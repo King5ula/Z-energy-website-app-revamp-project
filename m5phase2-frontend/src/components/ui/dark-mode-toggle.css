@@ -1,0 +1,81 @@
+/* Dark Mode Toggle - Pure CSS */
+.dark-mode-toggle {
+  position: relative;
+  display: inline-block;
+  width: 3.5em;
+  height: 2em;
+  cursor: pointer;
+}
+
+/* Hidden checkbox */
+.dark-mode-toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Slider */
+.dark-mode-toggle .slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 30px;
+  transition: all 0.5s ease;
+}
+
+/* Light mode - default */
+[data-theme="light"] .dark-mode-toggle .slider {
+  background-color: #e0e0e0;
+}
+
+/* Dark mode */
+[data-theme="dark"] .dark-mode-toggle .slider {
+  background-color: #0a1a44;
+}
+
+/* Sun/Moon circle */
+.dark-mode-toggle .slider:before {
+  content: '';
+  position: absolute;
+  height: 1.4em;
+  width: 1.4em;
+  left: 10%;
+  bottom: 15%;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+  /* Sun icon - default (light mode) */
+  box-shadow: inset 8px -4px 0px 0px #fff000;
+}
+
+/* Dark mode - moon */
+[data-theme="dark"] .dark-mode-toggle .slider:before {
+  background-color: #0a1a44;
+}
+
+/* Checked state - slide to right */
+.dark-mode-toggle input:checked + .slider {
+  background-color: #555;
+}
+
+[data-theme="light"] .dark-mode-toggle input:checked + .slider {
+  background-color: #999;
+}
+
+[data-theme="dark"] .dark-mode-toggle input:checked + .slider {
+  background-color: #102b6a;
+}
+
+/* Checked state - move circle and change to moon */
+.dark-mode-toggle input:checked + .slider:before {
+  transform: translateX(100%);
+  box-shadow: inset 15px -4px 0px 15px #fff000;
+}
+
+/* Hover effect */
+.dark-mode-toggle:hover .slider {
+  opacity: 0.9;
+}

@@ -14,7 +14,7 @@ const seedDatabase = async () => {
         await Station.deleteMany({});
         console.log('Old Station data cleared');
 
-        
+
         const stationsToInsert = geojsonData.features.map((feature, index) => {
         const props = feature.properties;
 
@@ -24,10 +24,6 @@ const seedDatabase = async () => {
 
         const baseIsTruck = props.truck === 'yes' || props.branch?.toLowerCase().includes('truckstop');
         const baseHasDiesel = props['fuel:diesel'] === 'yes' || baseIsTruck;
-
-        const generated91 = 2.05 + (index % 4) * 0.10;
-        const generated95 = 2.90 + (index % 3) * 0.05;
-        const generatedDiesel = baseHasDiesel ? 2.01 : 0.00;
 
         return{
             name: props.name || 'Z Energy',
@@ -67,12 +63,6 @@ const seedDatabase = async () => {
             hasZxPremium: index % 8 !== 0,
             hasZ91Unleaded: true,
             hasDiesel: props['fuel: diesel'] === 'yes',
-
-            //FUEL PRICES
-            priceZ91Unleaded: Number(generated91.toFixed(2)),
-            priceZxPremium: Number(generated95.toFixed(2)),
-            priceZDiesel: Number(generatedDiesel.toFixed(2)),
-
             location: {
                 type: 'Point',
                 coordinates: feature.geometry.coordinates

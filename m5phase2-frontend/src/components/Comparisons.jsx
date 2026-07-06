@@ -111,7 +111,7 @@ export default function Comparisons({ options, onBack }) {
                             </div>
 
                             <a
-                                href={`https://google.com{st.location?.coordinates[1] || 0},${st.location?.coordinates[0] || 0}`}
+                                href={`https://www.google.com/maps/dir/?api=1&destination=${st.location?.coordinates?.[1] ?? 0},${st.location?.coordinates?.[0] ?? 0}&travelmode=driving`}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className={styles.imageDirectionsLinkBtn}

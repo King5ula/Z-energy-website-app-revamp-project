@@ -6,27 +6,26 @@
   left: 0 !important;
   width: 100% !important;
   height: auto !important;
-  max-height: 80vh; /* Keeps part of the map visible at the top area */
+  max-height: 80vh; 
   z-index: 999999 !important;
-  background: #ffffff !important;
-  border-radius: 24px 24px 0 0; /* Premium bottom-sheet contour layout mapping */
+  background: var(--card-bg) !important;
+  border-radius: 24px 24px 0 0; 
   box-shadow: 0 -8px 32px rgba(11, 26, 48, 0.15);
   padding: 20px;
   box-sizing: border-box;
-  overflow-y: auto; /* Forces smooth scroll behavior inside the card for small mobile viewports */
-}
+  overflow-y: auto; 
 .standaloneBackBtn {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  background: #ffffff;
-  border: 1px solid #cbd5e0;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
   border-radius: 10px;
   padding: 6px 14px;
   font-family: 'DM Sans', sans-serif !important;
   font-size: 13px;
   font-weight: 700;
-  color: #2d3748;
+  color: var(--text-primary);
   cursor: pointer;
   margin-bottom: 16px;
 }
@@ -34,14 +33,15 @@
 
 .comparisonCardsFlexTrack {
   display: flex;
-  flex-direction: column; /* 🚀 STACKS BOTH MATRIX CARDS VERTICALLY FOR PHONE VIEWPORTS */
+  flex-direction: column;
   gap: 16px;
   width: 100%;
 }
 
 .comparisonCard {
-  background: #ffffff !important;
-  border: 1.5px solid #edf2f7;
+  background: var(--card-bg) !important;
+  color: var(--card-text);
+  border: 1.5px solid var(--border-color);
   border-radius: 14px;
   padding: 16px;
   display: flex;
@@ -73,7 +73,7 @@
   font-family: 'DM Sans', sans-serif !important;
   font-size: 15px;
   font-weight: 800;
-  color: #0b1a30;
+  color: var(--text-primary);
   margin: 0;
   text-align: left;
 }
@@ -95,9 +95,9 @@
 }
 
 .badgeStandardPrice {
-  background-color: #ffffff !important;
-  color: #1a202c !important;
-  border: 1.5px solid #1a202c;
+  background-color: var(--card-bg) !important;
+  color: var(--text-primary) !important;
+  border: 1.5px solid var(--text-primary);
 }
 
 .addressDetails {
@@ -112,7 +112,7 @@
   font-family: 'DM Sans', sans-serif !important;
   font-size: 12.5px;
   font-weight: 500;
-  color: #2d3748;
+  color: var(--text-primary);
   margin: 0;
   line-height: 1.3;
 }
@@ -120,7 +120,7 @@
 .contactNumber {
   font-family: 'DM Sans', sans-serif !important;
   font-size: 11.5px;
-  color: #718096;
+  color: var(--text-secondary);
   margin: 0;
 }
 
@@ -137,10 +137,10 @@
   align-items: center;
   font-size: 12.5px;
   padding-bottom: 4px;
-  border-bottom: 1px solid #f7fafc;
+  border-bottom: 1px solid var(--border-color);
 }
 
-.labelField { font-family: 'DM Sans', sans-serif !important; color: #4a5568; font-weight: 600; }
+.labelField { font-family: 'DM Sans', sans-serif !important; color: var(--text-secondary); font-weight: 600; }
 .valueFieldColorGreen { font-family: 'DM Sans', sans-serif !important; color: #38a169; font-weight: 700; }
 .valueField { font-family: 'DM Sans', sans-serif !important; font-weight: 700; }
 
@@ -154,7 +154,7 @@
   align-items: center;
   width: 100%;
   margin-bottom: 16px;
-  border-top: 1px solid #edf2f7;
+  border-top: 1px solid var(--border-color);
   padding-top: 10px;
 }
 
@@ -162,7 +162,7 @@
   font-family: 'DM Sans', sans-serif !important;
   font-size: 11px;
   font-weight: 800;
-  color: #1a202c;
+  color: var(--text-primary);
 }
 
 .facilitiesIconsTrack {
@@ -253,4 +253,3 @@
   
   .imageDirectionsLinkBtn { width: auto; align-self: center; }
   .directionsCapsuleBtn { width: 280px !important; } 
-}

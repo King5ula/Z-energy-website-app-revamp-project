@@ -15,8 +15,9 @@
 
 .popupCardBody {
   position: relative;
-  background: #ffffff !important;
-  width: 175px; 
+  background: var(--card-bg) !important;
+  color: var(--card-text);
+  width: 175px;
   min-height: 155px;
   padding: 14px;
   border-radius: 4px;
@@ -44,7 +45,7 @@
   font-family: 'DM Sans', sans-serif !important;
   font-size: 19px;
   font-weight: 700;
-  color: #1a202c;
+  color: var(--text-primary);
   margin: 4px 0 2px 0;
   text-align: center;
   width: 100%;
@@ -57,7 +58,7 @@
   font-family: 'DM Sans', sans-serif !important;
   font-size: 9.5px;
   font-weight: 500;
-  color: #0052cc;
+  color: var(--z-blue-primary);
   text-decoration: underline;
   margin: 0 0 10px 0;
   text-align: center;
@@ -75,13 +76,13 @@
   text-align: center;
 }
 
-.standardBlack { color: #1a202c !important; }
+.standardBlack { color: var(--text-primary) !important; }
 .bargainGreen { color: #38a169 !important; }
 .openingHoursText {
   font-family: 'DM Sans', sans-serif !important;
   font-size: 10px;
   font-weight: 700;
-  color: #2d3748;
+  color: var(--text-secondary);
   text-align: center;
   margin-top: auto;
 }
@@ -91,6 +92,6 @@
   height: 0;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  border-top: 12px solid #ffffff;
+  border-top: 12px solid var(--card-bg);
   margin-top: -1px;
 }

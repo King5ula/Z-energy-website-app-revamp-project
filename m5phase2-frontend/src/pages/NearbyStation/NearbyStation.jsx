@@ -1,5 +1,6 @@
 import React, { useReducer, useEffect, useState, useMemo } from 'react';
 import { APIProvider, Map, AdvancedMarker, useMap } from '@vis.gl/react-google-maps';
+import Navbar from '../../components/Navbar.jsx';
 import StationSearchForm from '../../components/StationSearchForm.jsx';
 import StationCard from '../../components/StationCard.jsx';
 import Comparisons from '../../components/Comparisons.jsx';
@@ -115,7 +116,7 @@ function MapCameraController({ center, zoom }) {
   return null;
 }
 
-export default function NearbyStation() {
+export default function NearbyStation({ onBack }) {
   const [state, dispatch] = useReducer(stationReducer, initialState);
   const [hoveredStationId, setHoveredStationId] = useState(null);
 
@@ -188,7 +189,9 @@ export default function NearbyStation() {
   }, [nearbyStations]);
 
   return (
-    <div className={styles.zDesktopWorkflowContainer}>
+    <div className={styles.pageWithNav}>
+      <Navbar />
+      <div className={styles.zDesktopWorkflowContainer}>
       <div className={styles.zMapWrapper}>
         <APIProvider apiKey={import.meta.env.VITE_GOOGLE_MAPS_API_KEY}>
           <Map
@@ -242,6 +245,7 @@ export default function NearbyStation() {
           suggestions={state.suggestions || []}
           extractBranchName={extractBranchName}
           onSelectSuggestion={(item) => dispatch({ type: 'SELECT_SUGGESTION', payload: item })}
+          onBack={onBack}
         />
       )}
 
@@ -278,10 +282,10 @@ export default function NearbyStation() {
 
             <div
               className={styles.desktopSearchInput}
-              style={{ borderColor: '#e2e8f0', cursor: 'pointer', padding: '10px', borderRadius: '12px', border: '1px solid', display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}
+              style={{ cursor: 'pointer', padding: '10px', borderRadius: '12px', border: '1px solid var(--border-color)', display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}
               onClick={() => dispatch({ type: 'CHANGE_STEP', payload: 1 })}
             >
-              <span style={{ fontSize: '14px', fontWeight: '700', color: '#dd6b20', fontFamily: 'DM Sans' }}>
+              <span style={{ fontSize: '14px', fontWeight: '700', color: 'var(--z-orange-primary)', fontFamily: 'DM Sans' }}>
                 {state.searchWord || 'Howick'}
               </span>
               <span style={{ fontSize: '12px' }}>
@@ -319,6 +323,7 @@ export default function NearbyStation() {
           onBack={() => dispatch({ type: 'CHANGE_STEP', payload: 2 })}
         />
       )}
+      </div>
     </div>
   );
 }

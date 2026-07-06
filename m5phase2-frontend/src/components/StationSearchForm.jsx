@@ -4,7 +4,7 @@ import searchIcon from '../assets/icons/search.svg';
 import locator from '../assets/icons/navigation.svg';
 import pin from '../assets/icons/vector.svg';
 
-export default function StationSearchForm({ state, dispatch, onSelectSuggestion, suggestions, extractBranchName }) {
+export default function StationSearchForm({ state, dispatch, onSelectSuggestion, suggestions, extractBranchName, onBack }) {
 
   const [activeIndex, setActiveIndex] = useState(-1);
 
@@ -36,8 +36,8 @@ export default function StationSearchForm({ state, dispatch, onSelectSuggestion,
     <div className={styles.desktopModalOverlay}>
       <div className={`${styles.desktopSearchCard} panel-fade`}>
         
-        <button 
-          onClick={() => dispatch({ type: 'CHANGE_STEP', payload: 1 })} 
+        <button
+          onClick={() => (onBack ? onBack() : dispatch({ type: 'CHANGE_STEP', payload: 1 }))}
           className={styles.desktopBackBtn}
         >
           <span className="back-arrow-bracket">&lt;</span> Back

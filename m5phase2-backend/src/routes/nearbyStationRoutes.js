@@ -1,10 +1,14 @@
-// Route Mapping
-import { Router } from "express";
-import { getAllStations } from "../controllers/nearbyStationController.js";
+// ponytail: Express REST routing (Rung 1: Framework routing)
+// Why: Express Router provides modular route organization and middleware chaining
+// Ceiling: RESTful HTTP only, can't use WebSocket or Server-Sent Events directly
+// Upgrade: Add Socket.io if need real-time station updates
 
-const router = Router();
+import express from 'express';
+import { getNearbyStations } from '../controllers/nearbyStationController.js';
 
-router.get('/', getAllStations);
- 
+const router = express.Router();
+
+// this basically serves GET /api/stations -> all stations for the Nearby Station page
+router.get('/', getNearbyStations);
 
 export default router;
