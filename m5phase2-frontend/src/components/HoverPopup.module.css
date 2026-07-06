@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+.popupCardAnchor {
+  position: absolute;
+  bottom: 25px; 
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 99999999;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.15));
+  pointer-events: none;
+}
+
+.popupCardBody {
+  position: relative;
+  background: var(--card-bg) !important;
+  color: var(--card-text);
+  width: 175px;
+  min-height: 155px;
+  padding: 14px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.topLeftBlueBadge {
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  width: 22px;
+  height: 22px;
+  background-color: #deebff !important;
+  border: 1.5px solid #0052cc;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.branchTitle {
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 4px 0 2px 0;
+  text-align: center;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.addressLine {
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 9.5px;
+  font-weight: 500;
+  color: var(--z-blue-primary);
+  text-decoration: underline;
+  margin: 0 0 10px 0;
+  text-align: center;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.priceDisplay {
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.standardBlack { color: var(--text-primary) !important; }
+.bargainGreen { color: #38a169 !important; }
+.openingHoursText {
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--text-secondary);
+  text-align: center;
+  margin-top: auto;
+}
+
+.pointerTriangle {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 12px solid var(--card-bg);
+  margin-top: -1px;
+}

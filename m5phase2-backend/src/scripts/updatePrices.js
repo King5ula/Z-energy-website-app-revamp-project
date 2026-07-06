@@ -15,8 +15,13 @@ const updateLiveMarketPrices = async () => {
             const randomDieselPrice = Number((1.95 + Math.random() * 0.15).toFixed(2))
 
             await Station.findByIdAndUpdate(station._id, {
+<<<<<<< HEAD
+                priceZ91Unleaded: random91Price,
+                priceZxPremium: random95Price,
+=======
                 priceUnleadedZ91: random91Price,
                 pricePremiumZxPremium: random95Price,
+>>>>>>> 6d0935644d87c39d29bb52a705aa3594ead6e349
                 priceZDiesel: station.hasZDiesel ? randomDieselPrice : 0.00
             });
         }
@@ -28,3 +33,8 @@ const updateLiveMarketPrices = async () => {
         process.exit(1)
     }
 };
+<<<<<<< HEAD
+
+updateLiveMarketPrices();
+=======
+>>>>>>> 6d0935644d87c39d29bb52a705aa3594ead6e349

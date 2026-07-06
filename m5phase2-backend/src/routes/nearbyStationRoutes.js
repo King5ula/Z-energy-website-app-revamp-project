@@ -8,7 +8,7 @@ import { getNearbyStations } from '../controllers/nearbyStationController.js';
 
 const router = express.Router();
 
-// this basically defines nearby station routes
+// this basically serves GET /api/stations -> all stations for the Nearby Station page
 router.get('/', getNearbyStations);
 
 export default router;
