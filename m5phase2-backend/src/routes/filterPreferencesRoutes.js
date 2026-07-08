@@ -1,11 +1,8 @@
-import express from 'express';
-import { getFilterPreferences, applyFilterPreferences } from '../controllers/filterPreferencesController.js';
+// Route Mapping
+import { Router } from "express";
+import { handleGetFilteredStations } from "../controllers/filterPreferencesController.js";
 
-const router = express.Router();
-
-// this basically defines filter preferences routes
-router.get('/', getFilterPreferences);
-router.post('/', applyFilterPreferences);
+const router = Router();
+router.get("/", handleGetFilteredStations);
 
 export default router;
-
