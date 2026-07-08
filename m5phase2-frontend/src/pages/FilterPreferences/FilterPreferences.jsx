@@ -1,159 +1,68 @@
-import { useState } from "react";
-import styles from './FilterPreferences.module.css';
+import { useEffect, useState } from "react";
+import styles from "./FilterPreferences.module.css";
 
-export default function FilterPreferences({ onBack, onApply }) {
-  const [selectedAmenities, setSelectedAmenities] = useState([]);
-  const [selectedServices, setSelectedServices] = useState([]);
-  const [openNow, setOpenNow] = useState(false);
+export default function FilterPreferences({ onClose, onFiltersChange }) {
+  const [selectedFilters, setSelectedFilters] = useState([]);
 
-  const amenitiesList = [
-    "Car Wash",
-    "ATM",
-    "Restrooms",
-    "Wi-Fi",
-    "Coffee",
-    "Food Court",
-    "EV Charging",
-    "Air Pump",
-  ];
-
-  const servicesList = [
-    "Z Card Accepted",
-    "Sharetank Available",
-    "LPG Available",
-    "AdBlue Available",
-    "Premium Fuel",
-    "Diesel",
-  ];
-
-  const toggleAmenity = (amenity) => {
-    setSelectedAmenities((prev) =>
-      prev.includes(amenity)
-        ? prev.filter((a) => a !== amenity)
-        : [...prev, amenity]
+  function toggleFilter(filterKey) {
+    setSelectedFilters((current) =>
+      current.includes(filterKey)
+        ? current.filter((key) => key !== filterKey)
+        : [...current, filterKey],
     );
-  };
+  }
 
-  const toggleService = (service) => {
-    setSelectedServices((prev) =>
-      prev.includes(service)
-        ? prev.filter((s) => s !== service)
-        : [...prev, service]
-    );
-  };
-
-  const handleApply = () => {
-    const filters = {
-      amenities: selectedAmenities,
-      services: selectedServices,
-      openNow,
-    };
-    console.log("Applied filters:", filters);
-    if (onApply) {
-      onApply(filters);
-    }
-  };
-
-  const handleClear = () => {
-    setSelectedAmenities([]);
-    setSelectedServices([]);
-    setOpenNow(false);
-  };
+  useEffect(() => {
+    onFiltersChange?.(selectedFilters);
+  }, [selectedFilters, onFiltersChange]);
 
   return (
-    <div className={styles['filter-preferences-page']}>
-      <header className={styles['page-header']}>
-        <button className={styles['back-btn']} onClick={onBack}>
-          <span className={styles['back-arrow']}></span> Back
+    <aside className={styles.filterCard}>
+      <button className={styles.closeButton} onClick={onClose}>
+        x
+      </button>
+      <h2>Filters</h2>
+      <section>
+        <h3>Popular Filters</h3>
+        <button
+          className={selectedFilters.includes("payAtPump") ? styles.active : ""}
+          onClick={() => toggleFilter("payAtPump")}
+        >
+          24/7 Pay at Pump
         </button>
-        <h1>Filter Preferences</h1>
-      </header>
-
-      <div className="filter-content">
-        <div className="filter-section">
-          <h2>Availability</h2>
-          <div className="filter-group">
-            <label className="checkbox-label">
-              <input
-                type="checkbox"
-                checked={openNow}
-                onChange={(e) => setOpenNow(e.target.checked)}
-              />
-              <span className="checkbox-custom"></span>
-              <span className="checkbox-text">Open Now</span>
-            </label>
-          </div>
-        </div>
-
-        <div className="filter-section">
-          <h2>Amenities</h2>
-          <div className="filter-group">
-            {amenitiesList.map((amenity) => (
-              <label key={amenity} className="checkbox-label">
-                <input
-                  type="checkbox"
-                  checked={selectedAmenities.includes(amenity)}
-                  onChange={() => toggleAmenity(amenity)}
-                />
-                <span className="checkbox-custom"></span>
-                <span className="checkbox-text">{amenity}</span>
-              </label>
-            ))}
-          </div>
-        </div>
-
-        <div className="filter-section">
-          <h2>Services</h2>
-          <div className="filter-group">
-            {servicesList.map((service) => (
-              <label key={service} className="checkbox-label">
-                <input
-                  type="checkbox"
-                  checked={selectedServices.includes(service)}
-                  onChange={() => toggleService(service)}
-                />
-                <span className="checkbox-custom"></span>
-                <span className="checkbox-text">{service}</span>
-              </label>
-            ))}
-          </div>
-        </div>
-
-        <div className="filter-actions">
-          <button className="btn-clear" onClick={handleClear}>
-            Clear All
-          </button>
-          <button className="btn-apply" onClick={handleApply}>
-            Apply Filters
-          </button>
-        </div>
-
-        {(selectedAmenities.length > 0 || selectedServices.length > 0 || openNow) && (
-          <div className="active-filters">
-            <h3>Active Filters ({selectedAmenities.length + selectedServices.length + (openNow ? 1 : 0)})</h3>
-            <div className="filter-tags">
-              {openNow && (
-                <span className="filter-tag">
-                  Open Now
-                  <button onClick={() => setOpenNow(false)}><span className="close-icon"></span></button>
-                </span>
-              )}
-              {selectedAmenities.map((amenity) => (
-                <span key={amenity} className="filter-tag">
-                  {amenity}
-                  <button onClick={() => toggleAmenity(amenity)}><span className="close-icon"></span></button>
-                </span>
-              ))}
-              {selectedServices.map((service) => (
-                <span key={service} className="filter-tag">
-                  {service}
-                  <button onClick={() => toggleService(service)}><span className="close-icon"></span></button>
-                </span>
-              ))}
-            </div>
-          </div>
-        )}
-      </div>
-    </div>
+        <button
+          className={
+            selectedFilters.includes("evCharging") ? styles.active : ""
+          }
+          onClick={() => toggleFilter("evCharging")}
+        >
+          EV Charging
+        </button>
+      </section>
+      <section>
+        <h3>Station Type</h3>
+        <button
+          className={selectedFilters.includes("truckStop") ? styles.active : ""}
+          onClick={() => toggleFilter("truckStop")}
+        >
+          Truck Stop
+        </button>
+        <button
+          className={selectedFilters.includes("carWash") ? styles.active : ""}
+          onClick={() => toggleFilter("carWash")}
+        >
+          Car Wash
+        </button>
+      </section>
+      <section>
+        <h3>Fuel Type</h3>
+        <button
+          className={selectedFilters.includes("diesel") ? styles.active : ""}
+          onClick={() => toggleFilter("diesel")}
+        >
+          Diesel
+        </button>
+      </section>
+    </aside>
   );
 }
