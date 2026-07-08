@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+.desktopListCard {
+  background: var(--card-bg);
+  color: var(--card-text);
+  border-radius: 12px;
+  border: 1.5px solid var(--border-color);
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow: hidden;
+  flex-shrink: 0;
+  font-family: 'DM Sans', sans-serif !important;
+  transition: border-color 0.15s ease;
+}
+
+.cardRow {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+}
+
+.cardMain {
+  flex: 1;
+  min-width: 0;
+  padding: 12px 14px;
+  cursor: pointer;
+}
+
+.accordionBar {
+  flex-shrink: 0;
+  width: 15px;
+  border: none;
+  background: var(--z-orange-primary);
+  color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  transition: background-color 0.15s ease;
+}
+
+.accordionBar:hover {
+  filter: brightness(0.95);
+}
+
+.accordionChevron {
+  font-size: 13px;
+  line-height: 1;
+  transition: transform 0.2s ease;
+}
+
+.accordionChevronOpen {
+  transform: rotate(180deg);
+}
+
+.accordionWrap {
+  padding: 0 14px 14px;
+}
+
+.cardActiveSelection {
+  border-color: var(--z-orange-primary) !important;
+}
+
+.cardHeaderRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.zBrandIdentityBlock {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.companyMainLogo {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.branchHeadingTitle {
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--z-orange-primary);
+  margin: 0;
+  text-align: left;
+}
+
+.priceBadgeContainer {
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 13px;
+  font-weight: 800;
+  padding: 4px 8px !important;
+  border-radius: 6px;
+  min-width: 60px;
+  text-align: center;
+}
+
+.badgeLowestPrice {
+  background-color: #c6f6d5 !important;
+  color: #22543d !important;
+  border: 1px solid #38a169 !important;
+}
+
+.badgeStandardPrice {
+  background-color: var(--card-bg) !important;
+  color: var(--text-primary) !important;
+  border: 1.5px solid var(--text-primary);
+}
+
+.metaBadgesRow {
+  display: flex;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  gap: 4px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.utilityBadge {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 3px;
+  border-radius: 4px;
+  padding: 3px 6px !important;
+  white-space: nowrap !important;
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 9.5px !important;
+  font-weight: 700;
+}
+
+.badges {
+  width: 9px !important;
+  height: 9px !important;
+  object-fit: contain;
+}
+
+.badgeOpenNow { background-color: #f3e8ff !important; color: #6b46c1 !important; }
+.badgeFuel { background-color: #fef3c7 !important; color: #92400e !important; }
+.badgeToilets { background-color: #e0f2fe !important; color: #0369a1 !important; }
+.badgeCafe { background-color: #e0f2fe !important; color: #0369a1 !important; }
+
+.addressDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  width: 100%;
+  text-align: left;
+}
+
+.physicalAddress {
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+  line-height: 1.3;
+}
+
+.contactNumber {
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .desktopListCard {
+    padding: 16px 20px;
+    margin-bottom: 14px;
+  }
+  .branchHeadingTitle { font-size: 15px; }
+  .priceBadgeContainer { font-size: 14px; padding: 4px 10px !important; }
+  .metaBadgesRow { flex-wrap: nowrap !important; gap: 4px; overflow-x: auto; }
+  .utilityBadge { font-size: 10px !important; }
+  .badges { width: 10px !important; height: 10px !important; }
+  .physicalAddress { font-size: 13px; }
+}

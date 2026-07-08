@@ -53,7 +53,7 @@ function App() {
 
   const handleSearch = (query) => {
     setSearchQuery(query);
-    setShowActionOverlay(false);
+    setShowNearbyStation(true);
   };
 
   const handlePlanRoute = async (routeData) => {
@@ -81,6 +81,9 @@ function App() {
   const handleFiltersChange = useCallback((filters) => {
     setSelectedFilters(filters);
   }, []);
+  if (showNearbyStation) {
+    return <NearbyStation onBack={() => setShowNearbyStation(false)} />;
+  }
 
   return (
     <ErrorBoundary>

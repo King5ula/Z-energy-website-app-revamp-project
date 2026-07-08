@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+.accordion {
+  border-top: 1px solid var(--border-color);
+  margin-top: 12px;
+  padding-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: left;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.groupTitle {
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.hoursRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 12.5px;
+  color: var(--text-secondary);
+  padding-left: 4px;
+}
+
+.hoursValue {
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 12.5px;
+  font-weight: 600;
+  padding-left: 4px;
+}
+
+.mark {
+  width: 16px;
+  text-align: center;
+  font-weight: 900;
+  flex-shrink: 0;
+}
+
+.available {
+  color: var(--text-primary);
+}
+.available .mark {
+  color: #2f855a;
+}
+
+.unavailable {
+  color: var(--text-muted);
+}
+.unavailable .mark {
+  color: var(--text-muted);
+}
+
+.addToRouteBtn {
+  align-self: center;
+  margin-top: 4px;
+  background: var(--z-orange-primary);
+  color: #ffffff;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 26px;
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(221, 107, 32, 0.25);
+}

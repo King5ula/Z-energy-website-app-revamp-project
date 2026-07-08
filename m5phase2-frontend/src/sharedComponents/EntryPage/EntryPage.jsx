@@ -6,6 +6,7 @@ import RouteIcon from "../../assets/Route.png";
 import RouteIconInverted from "../../assets/Route-inverted.png";
 import SliderIcon from "../../assets/Slider.png";
 import SliderIconInverted from "../../assets/Slider-inverted.png";
+import NearbyStation from "../../pages/NearbyStation/NearbyStation";
 
 export default function EntryPage({ onAllow, onDeny, onSearch, onPlanRoute, onFilter }) {
   const [showConsent, setShowConsent] = useState(true);
@@ -15,6 +16,7 @@ export default function EntryPage({ onAllow, onDeny, onSearch, onPlanRoute, onFi
   const [destination, setDestination] = useState("");
   const [searchQuery, setSearchQuery] = useState("");
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const [showNearbyStation, setShowNearbyStation] = useState(false);
 
   useEffect(() => {
     const checkTheme = () => {
@@ -66,6 +68,7 @@ export default function EntryPage({ onAllow, onDeny, onSearch, onPlanRoute, onFi
   };
 
   const handleSearch = () => {
+    setShowNearbyStation(true);
     if (onSearch) {
       onSearch(searchQuery);
     }
@@ -76,6 +79,10 @@ export default function EntryPage({ onAllow, onDeny, onSearch, onPlanRoute, onFi
       onFilter();
     }
   };
+
+  if (showNearbyStation) {
+    return <NearbyStation onBack={() => setShowNearbyStation(false)} />;
+  }
 
   return (
     <div className="entry-page">
