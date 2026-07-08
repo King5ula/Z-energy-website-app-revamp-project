@@ -1,20 +1,20 @@
-import { useState, useEffect } from 'react';
-import AddressAutocomplete from './AddressAutocomplete';
-import '../styles/ActionOverlay.css';
-import SearchIcon from '../assets/Search.png';
-import SearchIconInverted from '../assets/Search-inverted.png';
-import RouteIcon from '../assets/Route.png';
-import RouteIconInverted from '../assets/Route-inverted.png';
-import SliderIcon from '../assets/Slider.png';
-import SliderIconInverted from '../assets/Slider-inverted.png';
+import { useState, useEffect } from "react";
+import AddressAutocomplete from "./AddressAutocomplete";
+import "../styles/ActionOverlay.css";
+import SearchIcon from "../assets/Search.png";
+import SearchIconInverted from "../assets/Search-inverted.png";
+import RouteIcon from "../assets/Route.png";
+import RouteIconInverted from "../assets/Route-inverted.png";
+import SliderIcon from "../assets/Slider.png";
+import SliderIconInverted from "../assets/Slider-inverted.png";
 
 function ActionOverlay({ onClose, onSearch, onPlanRoute, onFilter }) {
-  const [view, setView] = useState('main'); // 'main', 'route-form', 'starting-point', 'destination'
-  const [startPoint, setStartPoint] = useState('');
-  const [destination, setDestination] = useState('');
+  const [view, setView] = useState("main"); // 'main', 'route-form', 'starting-point', 'destination'
+  const [startPoint, setStartPoint] = useState("");
+  const [destination, setDestination] = useState("");
   const [startLocation, setStartLocation] = useState(null);
   const [destinationLocation, setDestinationLocation] = useState(null);
-  const [searchQuery, setSearchQuery] = useState('');
+  const [searchQuery, setSearchQuery] = useState("");
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [nearbyStations, setNearbyStations] = useState([]);
   const [preferences, setPreferences] = useState({
@@ -25,8 +25,8 @@ function ActionOverlay({ onClose, onSearch, onPlanRoute, onFilter }) {
 
   useEffect(() => {
     const checkTheme = () => {
-      const theme = document.documentElement.getAttribute('data-theme');
-      setIsDarkMode(theme === 'dark' || theme === null);
+      const theme = document.documentElement.getAttribute("data-theme");
+      setIsDarkMode(theme === "dark" || theme === null);
     };
 
     checkTheme();
@@ -35,7 +35,7 @@ function ActionOverlay({ onClose, onSearch, onPlanRoute, onFilter }) {
     const observer = new MutationObserver(checkTheme);
     observer.observe(document.documentElement, {
       attributes: true,
-      attributeFilter: ['data-theme']
+      attributeFilter: ["data-theme"],
     });
 
     return () => observer.disconnect();
@@ -49,14 +49,16 @@ function ActionOverlay({ onClose, onSearch, onPlanRoute, onFilter }) {
     const fetchNearbyStations = async () => {
       if (startLocation && startLocation.lat && startLocation.lng) {
         try {
-          const response = await fetch(`/api/stations/nearest?lat=${startLocation.lat}&lng=${startLocation.lng}&limit=5`);
+          const response = await fetch(
+            `/api/stations/nearest?lat=${startLocation.lat}&lng=${startLocation.lng}&limit=5`,
+          );
           const result = await response.json();
           const data = result.success ? result.data : result;
           if (data && Array.isArray(data)) {
             setNearbyStations(data);
           }
         } catch (error) {
-          console.error('Failed to fetch nearby stations:', error);
+          console.error("Failed to fetch nearby stations:", error);
           setNearbyStations([]);
         }
       } else {
@@ -68,40 +70,47 @@ function ActionOverlay({ onClose, onSearch, onPlanRoute, onFilter }) {
   }, [startLocation]);
 
   const handlePlanRoute = () => {
-    setView('route-form');
+    setView("route-form");
   };
 
   const handleBack = () => {
-    if (view === 'starting-point' || view === 'destination' || view === 'filter') {
-      setView('route-form');
+    if (
+      view === "starting-point" ||
+      view === "destination" ||
+      view === "filter"
+    ) {
+      setView("route-form");
     } else {
-      setView('main');
-      setStartPoint('');
-      setDestination('');
+      setView("main");
+      setStartPoint("");
+      setDestination("");
       setStartLocation(null);
       setDestinationLocation(null);
     }
   };
 
+  // Handle the filter button click
   const handleFilter = () => {
-    setView('filter');
+    if (onFilter) {
+      onFilter();
+    } else setView("filter");
   };
 
   const handlePreferenceChange = (key) => {
-    setPreferences(prev => ({
+    setPreferences((prev) => ({
       ...prev,
-      [key]: !prev[key]
+      [key]: !prev[key],
     }));
   };
 
   const handleConfigureRoute = async () => {
     if (!startPoint || !destination) {
-      alert('Please select both starting point and destination');
+      alert("Please select both starting point and destination");
       return;
     }
 
     if (!startLocation || !destinationLocation) {
-      alert('Please select valid locations from the autocomplete suggestions');
+      alert("Please select valid locations from the autocomplete suggestions");
       return;
     }
 
@@ -113,8 +122,8 @@ function ActionOverlay({ onClose, onSearch, onPlanRoute, onFilter }) {
         destinationLocation,
         preferences: {
           ...preferences,
-          travelMode: 'DRIVING'
-        }
+          travelMode: "DRIVING",
+        },
       });
     }
   };
@@ -126,14 +135,14 @@ function ActionOverlay({ onClose, onSearch, onPlanRoute, onFilter }) {
   };
 
   const handleSearchClick = () => {
-    setView('search');
+    setView("search");
   };
 
   const handleStartPlaceSelected = (place) => {
     setStartPoint(place.address);
     setStartLocation(place.location);
     setTimeout(() => {
-      setView('route-form');
+      setView("route-form");
     }, 300);
   };
 
@@ -141,105 +150,112 @@ function ActionOverlay({ onClose, onSearch, onPlanRoute, onFilter }) {
     setDestination(place.address);
     setDestinationLocation(place.location);
     setTimeout(() => {
-      setView('route-form');
+      setView("route-form");
     }, 300);
   };
 
   const handleStationSelected = (station) => {
-    let stationAddress = '';
-    if (typeof station.address === 'string') {
+    let stationAddress = "";
+    if (typeof station.address === "string") {
       stationAddress = station.address;
-    } else if (station.address && typeof station.address === 'object') {
+    } else if (station.address && typeof station.address === "object") {
       const parts = [];
       if (station.address.lines) parts.push(station.address.lines);
       if (station.address.suburb) parts.push(station.address.suburb);
       if (station.address.region) parts.push(station.address.region);
-      stationAddress = parts.join(', ');
+      stationAddress = parts.join(", ");
     } else {
-      stationAddress = `${station.name}, ${station.city || ''}`;
+      stationAddress = `${station.name}, ${station.city || ""}`;
     }
 
     setDestination(stationAddress);
     setDestinationLocation({
       lat: station.latitude,
-      lng: station.longitude
+      lng: station.longitude,
     });
     setTimeout(() => {
-      setView('route-form');
+      setView("route-form");
     }, 300);
   };
 
   const handleUseMyLocation = () => {
     if (!navigator.geolocation) {
-      alert('Geolocation is not supported by your browser. Please enter your address manually.');
+      alert(
+        "Geolocation is not supported by your browser. Please enter your address manually.",
+      );
       return;
     }
 
-    console.log('Requesting location...');
+    console.log("Requesting location...");
 
     navigator.geolocation.getCurrentPosition(
       async (position) => {
         // Success callback
-        console.log('Location obtained:', position.coords);
+        console.log("Location obtained:", position.coords);
         const lat = position.coords.latitude;
         const lng = position.coords.longitude;
 
         // ponytail: Use Google Maps Geocoder to convert coordinates to address
         // Ceiling: Requires Google Maps to be loaded first
-        if (window.google && window.google.maps && window.google.maps.Geocoder) {
+        if (
+          window.google &&
+          window.google.maps &&
+          window.google.maps.Geocoder
+        ) {
           const geocoder = new window.google.maps.Geocoder();
           const latlng = { lat, lng };
 
           geocoder.geocode({ location: latlng }, (results, status) => {
-            if (status === 'OK' && results[0]) {
+            if (status === "OK" && results[0]) {
               setStartPoint(results[0].formatted_address);
               setStartLocation({ lat, lng });
-              setView('route-form');
+              setView("route-form");
             } else {
               const locationText = `${lat.toFixed(4)}, ${lng.toFixed(4)}`;
               setStartPoint(locationText);
               setStartLocation({ lat, lng });
-              setView('route-form');
+              setView("route-form");
             }
           });
         } else {
           const locationText = `${lat.toFixed(4)}, ${lng.toFixed(4)}`;
           setStartPoint(locationText);
           setStartLocation({ lat, lng });
-          setView('route-form');
+          setView("route-form");
         }
       },
       (error) => {
-        console.error('Geolocation error:', error);
-        let errorMessage = 'Could not get your location. ';
+        console.error("Geolocation error:", error);
+        let errorMessage = "Could not get your location. ";
 
-        switch(error.code) {
+        switch (error.code) {
           case error.PERMISSION_DENIED:
-            errorMessage += 'Permission denied. Please allow location access in your browser settings.';
+            errorMessage +=
+              "Permission denied. Please allow location access in your browser settings.";
             break;
           case error.POSITION_UNAVAILABLE:
-            errorMessage += 'Location information is unavailable.';
+            errorMessage += "Location information is unavailable.";
             break;
           case error.TIMEOUT:
-            errorMessage += 'Location request timed out.';
+            errorMessage += "Location request timed out.";
             break;
           default:
-            errorMessage += 'An unknown error occurred.';
+            errorMessage += "An unknown error occurred.";
             break;
         }
 
-        alert(errorMessage + '\n\nPlease enter your address manually instead.');
+        alert(errorMessage + "\n\nPlease enter your address manually instead.");
       },
       {
         enableHighAccuracy: true,
         timeout: 10000,
-        maximumAge: 0
-      }
+        maximumAge: 0,
+      },
     );
   };
 
   // Starting point selection view
-  if (view === 'starting-point') {
+  if (view === "starting-point") {
     return (
       <div className="action-overlay">
         <div className="action-card route-selection-card">
@@ -267,7 +283,7 @@ function ActionOverlay({ onClose, onSearch, onPlanRoute, onFilter }) {
   }
 
   // Destination selection view
-  if (view === 'destination') {
+  if (view === "destination") {
     return (
       <div className="action-overlay">
         <div className="action-card route-selection-card">
@@ -292,16 +308,21 @@ function ActionOverlay({ onClose, onSearch, onPlanRoute, onFilter }) {
               </div>
               <div className="nearby-stations-list">
                 {nearbyStations.map((station) => {
-                  let displayAddress = '';
-                  if (typeof station.address === 'string') {
+                  let displayAddress = "";
+                  if (typeof station.address === "string") {
                     displayAddress = station.address;
-                  } else if (station.address && typeof station.address === 'object') {
+                  } else if (
+                    station.address &&
+                    typeof station.address === "object"
+                  ) {
                     const parts = [];
-                    if (station.address.suburb) parts.push(station.address.suburb);
-                    if (station.address.region) parts.push(station.address.region);
-                    displayAddress = parts.join(', ') || station.city || '';
+                    if (station.address.suburb)
+                      parts.push(station.address.suburb);
+                    if (station.address.region)
+                      parts.push(station.address.region);
+                    displayAddress = parts.join(", ") || station.city || "";
                   } else {
-                    displayAddress = station.city || '';
+                    displayAddress = station.city || "";
                   }
 
                   return (
@@ -312,10 +333,14 @@ function ActionOverlay({ onClose, onSearch, onPlanRoute, onFilter }) {
                     >
                       <div className="station-info">
                         <span className="station-name">{station.name}</span>
-                        <span className="station-address">{displayAddress}</span>
+                        <span className="station-address">
+                          {displayAddress}
+                        </span>
                       </div>
                       <span className="station-distance">
-                        {station.distance ? `${station.distance.toFixed(1)} km` : ''}
+                        {station.distance
+                          ? `${station.distance.toFixed(1)} km`
+                          : ""}
                       </span>
                     </button>
                   );
@@ -329,7 +354,7 @@ function ActionOverlay({ onClose, onSearch, onPlanRoute, onFilter }) {
   }
 
   // Route form view
-  if (view === 'route-form') {
+  if (view === "route-form") {
     return (
       <div className="action-overlay">
         <div className="action-card route-form">
@@ -340,7 +365,7 @@ function ActionOverlay({ onClose, onSearch, onPlanRoute, onFilter }) {
           <div className="route-buttons-overlay">
             <button
               className="route-button-overlay"
-              onClick={() => setView('starting-point')}
+              onClick={() => setView("starting-point")}
             >
               <span className="route-button-text-overlay">
                 {startPoint || "Choose a starting point"}
@@ -350,25 +375,31 @@ function ActionOverlay({ onClose, onSearch, onPlanRoute, onFilter }) {
 
             <button
               className="route-button-overlay"
-              onClick={() => setView('destination')}
+              onClick={() => setView("destination")}
             >
               <span className="route-button-text-overlay">
                 {destination || "Enter Destination"}
               </span>
-              <img src={searchIcon} alt="Destination" className="route-icon-img" />
+              <img
+                src={searchIcon}
+                alt="Destination"
+                className="route-icon-img"
+              />
             </button>
           </div>
 
           <div className="route-actions">
             <button className="btn-filter" onClick={handleFilter}>
-              <img src={sliderIcon} alt="Filter" className="btn-icon-img" /> Filter
+              <img src={sliderIcon} alt="Filter" className="btn-icon-img" />{" "}
+              Filter
             </button>
             <button
               className="btn-configure"
               onClick={handleConfigureRoute}
               disabled={!startPoint || !destination}
             >
-              <img src={routeIcon} alt="Route" className="btn-icon-img" /> Configure route
+              <img src={routeIcon} alt="Route" className="btn-icon-img" />{" "}
+              Configure route
             </button>
           </div>
         </div>
@@ -377,7 +408,7 @@ function ActionOverlay({ onClose, onSearch, onPlanRoute, onFilter }) {
   }
 
   // Filter preferences view
-  if (view === 'filter') {
+  if (view === "filter") {
     return (
       <div className="action-overlay">
         <div className="action-card route-selection-card">
@@ -392,7 +423,7 @@ function ActionOverlay({ onClose, onSearch, onPlanRoute, onFilter }) {
               <input
                 type="checkbox"
                 checked={preferences.avoidTolls}
-                onChange={() => handlePreferenceChange('avoidTolls')}
+                onChange={() => handlePreferenceChange("avoidTolls")}
               />
               <span>Avoid Tolls</span>
             </label>
@@ -401,7 +432,7 @@ function ActionOverlay({ onClose, onSearch, onPlanRoute, onFilter }) {
               <input
                 type="checkbox"
                 checked={preferences.avoidHighways}
-                onChange={() => handlePreferenceChange('avoidHighways')}
+                onChange={() => handlePreferenceChange("avoidHighways")}
               />
               <span>Avoid Highways</span>
             </label>
@@ -410,13 +441,16 @@ function ActionOverlay({ onClose, onSearch, onPlanRoute, onFilter }) {
               <input
                 type="checkbox"
                 checked={preferences.avoidFerries}
-                onChange={() => handlePreferenceChange('avoidFerries')}
+                onChange={() => handlePreferenceChange("avoidFerries")}
               />
               <span>Avoid Ferries</span>
             </label>
           </div>
 
-          <button className="btn-apply-filters" onClick={() => setView('route-form')}>
+          <button
+            className="btn-apply-filters"
+            onClick={() => setView("route-form")}
+          >
             Apply Filters
           </button>
         </div>
