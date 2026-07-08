@@ -49,6 +49,12 @@ function Navbar() {
       <div className="navbar-container">
         {/* Logo and Tab Switcher */}
         <div className="navbar-left">
+          {/* Hamburger - mobile only */}
+          <button className="navbar-hamburger" aria-label="Menu">
+            <span></span>
+            <span></span>
+          </button>
+
           <img src={zLogo} alt="Z Energy" className="navbar-logo" />
 
           <div className="tab-switcher">
@@ -77,13 +83,15 @@ function Navbar() {
             <img src={searchIcon} alt="Search" className="navbar-icon-img" />
           </button>
 
-          {/* Dark Mode Toggle */}
+          {/* Dark Mode Toggle - visible on mobile and desktop */}
           <DarkModeToggle isDarkMode={isDarkMode} onToggle={toggleTheme} />
 
-          {/* Login Button - Simple Image */}
-          <button className="login-button-image" aria-label="Login">
-            <img src={loginButtonImage} alt="Login" />
-          </button>
+          {/* Login Button - hidden on mobile */}
+          <span className="navbar-desktop-only">
+            <button className="login-button-image" aria-label="Login">
+              <img src={loginButtonImage} alt="Login" />
+            </button>
+          </span>
         </div>
       </div>
 

@@ -1,13 +1,19 @@
 import React from 'react';
-import styles from './HoverPopup.module.css';
+import styles from '../styles/HoverPopup.module.css';
+
+const POPUP_FACILITIES = [
+  { label: 'Bathrooms', key: 'hasBathrooms' },
+  { label: 'ATM', key: 'hasAtm' },
+  { label: 'Car Wash', key: 'hasZ2oCarwash' },
+  { label: 'Cafe', key: 'hasZEspressCoffeeFood' },
+];
 
 export default function HoverPopup({ station, isBargain, extractBranchName }) {
+  const availableFacilities = POPUP_FACILITIES.filter((f) => station[f.key]);
+
   return (
     <div className={styles.popupCardAnchor}>
       <div className={styles.popupCardBody}>
-        
-        <div className={styles.topLeftBlueBadge}>
-        </div>
 
         <h4 className={styles.branchTitle}>
           {extractBranchName(station.website)}
@@ -24,6 +30,17 @@ export default function HoverPopup({ station, isBargain, extractBranchName }) {
         <div className={styles.openingHoursText}>
           Opening hours: {station.openingHours || '24/7'}
         </div>
+
+        {availableFacilities.length > 0 && (
+          <div className={styles.facilitiesRow}>
+            {availableFacilities.map((f) => (
+              <span key={f.key} className={styles.facilityChip}>
+                {f.label}
+                <span className={styles.facilityChipTail}></span>
+              </span>
+            ))}
+          </div>
+        )}
 
       </div>
 

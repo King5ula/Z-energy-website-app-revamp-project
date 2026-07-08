@@ -9,7 +9,7 @@ import SliderIcon from '../assets/Slider.png';
 import SliderIconInverted from '../assets/Slider-inverted.png';
 
 function ActionOverlay({ onClose, onSearch, onPlanRoute, onFilter }) {
-  const [view, setView] = useState('main'); // 'main', 'route-form', 'starting-point', 'destination'
+  const [view, setView] = useState('main');
   const [startPoint, setStartPoint] = useState('');
   const [destination, setDestination] = useState('');
   const [startLocation, setStartLocation] = useState(null);
@@ -30,8 +30,7 @@ function ActionOverlay({ onClose, onSearch, onPlanRoute, onFilter }) {
     };
 
     checkTheme();
-
-    // Watch for theme changes
+    
     const observer = new MutationObserver(checkTheme);
     observer.observe(document.documentElement, {
       attributes: true,
@@ -430,7 +429,7 @@ function ActionOverlay({ onClose, onSearch, onPlanRoute, onFilter }) {
       <div className="action-card">
         <h2 className="action-title">Where are you heading?</h2>
         <div className="action-options">
-          <button className="action-option" onClick={handleSearchClick}>
+          <button className="action-option" onClick={handleSearch}>
             <div className="option-content">
               <span className="option-text">Search for a nearby station</span>
               <img src={searchIcon} alt="Search" className="option-icon-img" />

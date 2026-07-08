@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from './StationSearchForm.module.css'; 
+import styles from '../styles/StationSearchForm.module.css';
 import searchIcon from '../assets/icons/search.svg';
 import locator from '../assets/icons/navigation.svg';
 import pin from '../assets/icons/vector.svg';
@@ -38,7 +38,7 @@ export default function StationSearchForm({ state, dispatch, onSelectSuggestion,
         
         <button
           onClick={() => (onBack ? onBack() : dispatch({ type: 'CHANGE_STEP', payload: 1 }))}
-          className={styles.desktopBackBtn}
+          className={styles.mobileBackBtn}
         >
           <span className="back-arrow-bracket">&lt;</span> Back
         </button>

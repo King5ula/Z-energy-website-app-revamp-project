@@ -62,7 +62,7 @@ const seedDatabase = async () => {
             //FUEL TYPES
             hasZxPremium: index % 8 !== 0,
             hasZ91Unleaded: true,
-            hasDiesel: props['fuel: diesel'] === 'yes',
+            hasZDiesel: props['fuel:diesel'] === 'yes' || baseHasDiesel,
             location: {
                 type: 'Point',
                 coordinates: feature.geometry.coordinates

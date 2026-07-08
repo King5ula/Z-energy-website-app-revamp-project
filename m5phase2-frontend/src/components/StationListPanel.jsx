@@ -1,6 +1,6 @@
 import React from "react";
 import StationCard from "./StationCard";
-import styles from './StationListPanel.module.css';
+import styles from '../styles/StationListPanel.module.css';
 import crossroadIcon from '../../assets/icons/crossroad.svg';
 import filterIcon from '../../assets/icons/slider.svg';
 import searchIcon from '../../assets/icons/search.svg';

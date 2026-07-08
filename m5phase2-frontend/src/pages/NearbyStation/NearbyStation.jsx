@@ -1,4 +1,4 @@
-import React, { useReducer, useEffect, useState, useMemo } from 'react';
+import React, { useReducer, useEffect, useState, useMemo, useRef } from 'react';
 import { APIProvider, Map, AdvancedMarker, useMap } from '@vis.gl/react-google-maps';
 import Navbar from '../../components/Navbar.jsx';
 import StationSearchForm from '../../components/StationSearchForm.jsx';
@@ -6,8 +6,63 @@ import StationCard from '../../components/StationCard.jsx';
 import Comparisons from '../../components/Comparisons.jsx';
 import HoverPopup from '../../components/HoverPopup.jsx';
 import searchIcon from '../../assets/icons/search.svg';
+import sliderIcon from '../../assets/icons/slider.svg';
+import crossroadIcon from '../../assets/icons/crossroad.svg';
 import styles from './NearbyStation.module.css';
 import customPinImg from '../../assets/icons/property-1-variant-2.svg';
+
+
+function useIsMobile() {
+  const [isMobile, setIsMobile] = useState(
+    typeof window !== 'undefined' && window.matchMedia('(max-width: 767px)').matches
+  );
+  useEffect(() => {
+    const mq = window.matchMedia('(max-width: 767px)');
+    const handler = (e) => setIsMobile(e.matches);
+    mq.addEventListener('change', handler);
+    return () => mq.removeEventListener('change', handler);
+  }, []);
+  return isMobile;
+}
+
+function MobileTopSearchBar({ searchWord, onEdit, onBack, showBack }) {
+  return (
+    <div className={styles.mobileTopBar}>
+      {showBack && (
+        <button
+          type="button"
+          className={styles.mobileTopBackBtnSide}
+          onClick={onBack}
+          aria-label="Go back to station list"
+        >
+          <span aria-hidden="true">←</span>
+          <span>Back</span>
+        </button>
+      )}
+      <div
+        className={styles.mobileTopSearchFrame}
+        onClick={onEdit}
+        role="button"
+        tabIndex={0}
+        onKeyDown={(e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            onEdit();
+          }
+        }}
+      >
+        <span className={styles.mobileTopSearchText}>{searchWord || 'Search location'}</span>
+        <img src={searchIcon} alt="" className={styles.mobileTopSearchIcon} />
+      </div>
+      <button type="button" className={styles.mobileTopIconBtn} aria-label="Filters">
+        <img src={sliderIcon} alt="" />
+      </button>
+      <button type="button" className={styles.mobileTopIconBtn} aria-label="Map layers">
+        <img src={crossroadIcon} alt="" />
+      </button>
+    </div>
+  );
+}
 
 const extractBranchName = (station) => {
     if (!station) return "Z Station";
@@ -40,7 +95,6 @@ const extractBranchName = (station) => {
     return station.name && station.name.trim() !== '' ? station.name.trim() : "Station";
 };
 
-// Great-circle distance in metres between two { lat, lng } points (Haversine).
 const haversineMeters = (from, to) => {
   if (!from || !to) return Infinity;
   const R = 6371000;
@@ -66,6 +120,8 @@ const scoreSuggestion = (station, query) => {
   return best;
 };
 
+const STORAGE_KEY = 'nearby-station-workflow-v1';
+
 const initialState = {
   currentStep: 1,
   searchWord: '',
@@ -76,6 +132,22 @@ const initialState = {
   radius: 15000,
   suggestions: []
 };
+
+const readStoredWorkflow = () => {
+  if (typeof window === 'undefined') return null;
+  try {
+    const raw = window.sessionStorage.getItem(STORAGE_KEY);
+    return raw ? JSON.parse(raw) : null;
+  } catch (error) {
+    console.warn('Unable to read nearby station workflow from session storage', error);
+    return null;
+  }
+};
+
+const buildWorkflowSnapshot = (state, expandedMobileStationId) => ({
+  state,
+  expandedMobileStationId
+});
 
 function stationReducer(state, action) {
   switch (action.type) {
@@ -101,6 +173,8 @@ function stationReducer(state, action) {
         mapCenter: coords && coords.length === 2 ? { lat: Number(coords[1]), lng: Number(coords[0]) } : state.mapCenter,
         mapZoom: 13
       };
+    case 'RESTORE_WORKFLOW':
+      return action.payload?.state || state;
     default:
       return state;
   }
@@ -117,8 +191,45 @@ function MapCameraController({ center, zoom }) {
 }
 
 export default function NearbyStation({ onBack }) {
-  const [state, dispatch] = useReducer(stationReducer, initialState);
+  const initialWorkflow = useMemo(() => {
+    const stored = readStoredWorkflow();
+    if (!stored) return initialState;
+    return {
+      ...initialState,
+      ...stored.state,
+      mapCenter: stored.state?.mapCenter || initialState.mapCenter,
+      mapZoom: stored.state?.mapZoom || initialState.mapZoom,
+      radius: stored.state?.radius || initialState.radius,
+      suggestions: Array.isArray(stored.state?.suggestions) ? stored.state.suggestions : []
+    };
+  }, []);
+  const [state, dispatch] = useReducer(stationReducer, initialWorkflow);
   const [hoveredStationId, setHoveredStationId] = useState(null);
+  // When a facility icon is hovered on a comparison card, every station that
+  // offers that facility shows a chip on the map. Shape: { key, label } | null.
+  const [hoveredFacility, setHoveredFacility] = useState(null);
+  // Mobile-only: which station's accordion is taking over the list panel.
+  const [expandedMobileStationId, setExpandedMobileStationId] = useState(() => {
+    if (typeof window === 'undefined') return null;
+    const stored = readStoredWorkflow();
+    return stored?.expandedMobileStationId || null;
+  });
+  const isMobile = useIsMobile();
+  const lastStepRef = useRef(state.currentStep);
+  const hasInitializedHistoryRef = useRef(false);
+
+  const handleMobileBack = () => {
+    if (expandedMobileStationId) {
+      setExpandedMobileStationId(null);
+      return;
+    }
+
+    if (state.currentStep > 1) {
+      dispatch({ type: 'CHANGE_STEP', payload: Math.max(1, state.currentStep - 1) });
+    } else if (onBack) {
+      onBack();
+    }
+  };
 
   useEffect(() => {
     const loadNationalStationsIndex = async () => {
@@ -132,6 +243,55 @@ export default function NearbyStation({ onBack }) {
     };
     loadNationalStationsIndex();
   }, []);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      window.sessionStorage.setItem(STORAGE_KEY, JSON.stringify(buildWorkflowSnapshot(state, expandedMobileStationId)));
+    }
+  }, [state, expandedMobileStationId]);
+
+  useEffect(() => {
+    if (state.currentStep < 3) {
+      setExpandedMobileStationId(null);
+    }
+  }, [state.currentStep]);
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    if (!hasInitializedHistoryRef.current) {
+      hasInitializedHistoryRef.current = true;
+      const initialEntry = { workflow: buildWorkflowSnapshot(state, expandedMobileStationId) };
+      window.history.replaceState(initialEntry, '', window.location.pathname + window.location.search);
+      lastStepRef.current = state.currentStep;
+      return;
+    }
+
+    if (lastStepRef.current === state.currentStep) return;
+
+    const nextEntry = { workflow: buildWorkflowSnapshot(state, expandedMobileStationId) };
+    window.history.pushState(nextEntry, '', window.location.pathname + window.location.search);
+    lastStepRef.current = state.currentStep;
+  }, [state.currentStep, state.searchWord, state.selectedStation, expandedMobileStationId]);
+
+  useEffect(() => {
+    const handlePopState = (event) => {
+      const snapshot = event.state?.workflow;
+      if (snapshot) {
+        dispatch({ type: 'RESTORE_WORKFLOW', payload: snapshot });
+        setExpandedMobileStationId(snapshot.expandedMobileStationId || null);
+        return;
+      }
+
+      if (state.currentStep > 1) {
+        dispatch({ type: 'CHANGE_STEP', payload: Math.max(1, state.currentStep - 1) });
+      } else if (onBack) {
+        onBack();
+      }
+    };
+
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, [onBack, state.currentStep]);
 
   useEffect(() => {
     if (state.currentStep !== 1) return;
@@ -188,9 +348,17 @@ export default function NearbyStation({ onBack }) {
     return nearbyStations.slice(0, 2);
   }, [nearbyStations]);
 
+  // On mobile, expanding a station card takes over the panel (hides the list).
+  const expandedMobileStation = expandedMobileStationId
+    ? nearbyStations.find((st) => st._id === expandedMobileStationId) || null
+    : null;
+
   return (
     <div className={styles.pageWithNav}>
       <Navbar />
+      {isMobile && (
+        <h1 className={styles.mobileHeading}>Find your nearest Z Energy station</h1>
+      )}
       <div className={styles.zDesktopWorkflowContainer}>
       <div className={styles.zMapWrapper}>
         <APIProvider apiKey={import.meta.env.VITE_GOOGLE_MAPS_API_KEY}>
@@ -229,6 +397,12 @@ export default function NearbyStation({ onBack }) {
                         extractBranchName={() => extractBranchName(st)}
                       />
                     )}
+                    {hoveredFacility && st[hoveredFacility.key] && (
+                      <div className={styles.facilityMapChip}>
+                        {hoveredFacility.label}
+                        <span className={styles.facilityMapChipTail}></span>
+                      </div>
+                    )}
                     <img src={customPinImg} alt="" style={{ width: '28px', height: '28px', objectFit: 'contain', cursor: 'pointer' }} />
                   </div>
                 </AdvancedMarker>
@@ -249,7 +423,82 @@ export default function NearbyStation({ onBack }) {
         />
       )}
 
-      {state.currentStep === 2 && (
+      {isMobile && state.currentStep >= 2 && (
+        <MobileTopSearchBar
+          searchWord={state.searchWord}
+          onEdit={() => dispatch({ type: 'CHANGE_STEP', payload: 1 })}
+          onBack={handleMobileBack}
+          showBack={true}
+        />
+      )}
+
+      {isMobile && state.currentStep === 2 && (
+        <button
+          type="button"
+          className={`${styles.mobileBottomActionBtn} panel-fade`}
+          onClick={() => dispatch({ type: 'CHANGE_STEP', payload: 3 })}
+        >
+          List Stations
+        </button>
+      )}
+
+      {isMobile && state.currentStep === 3 && (
+        <>
+          {expandedMobileStation ? (
+            <div className={`${styles.mobileCardsPanel} ${styles.mobileCardsPanelExpanded} panel-fade`}>
+              <StationCard
+                station={expandedMobileStation}
+                isSelected={state.selectedStation?._id === expandedMobileStation._id}
+                lowestLocalPrice={lowestLocalPrice}
+                expanded={true}
+                onToggleExpand={() => setExpandedMobileStationId(null)}
+                onSelect={() => dispatch({ type: 'SELECT_STATION', payload: expandedMobileStation })}
+              />
+              <button
+                type="button"
+                className={styles.backToTopBtn}
+                onClick={() => setExpandedMobileStationId(null)}
+              >
+                Back to Top
+              </button>
+            </div>
+          ) : (
+            <>
+              <div className={`${styles.mobileCardsPanel} panel-fade`}>
+                {nearbyStations.map((st) => (
+                  <StationCard
+                    key={st._id}
+                    station={st}
+                    isSelected={state.selectedStation?._id === st._id}
+                    lowestLocalPrice={lowestLocalPrice}
+                    expanded={false}
+                    onToggleExpand={() => setExpandedMobileStationId(st._id)}
+                    onSelect={() => dispatch({ type: 'SELECT_STATION', payload: st })}
+                  />
+                ))}
+              </div>
+              <button
+                type="button"
+                className={styles.mobileBottomActionBtn}
+                onClick={() => dispatch({ type: 'CHANGE_STEP', payload: 4 })}
+              >
+                Compare Stations
+              </button>
+            </>
+          )}
+        </>
+      )}
+
+      {isMobile && state.currentStep === 4 && (
+        <Comparisons
+          isMobile
+          options={comparisonOptions}
+          onBack={() => dispatch({ type: 'CHANGE_STEP', payload: 3 })}
+        />
+      )}
+
+
+      {!isMobile && state.currentStep === 2 && (
         <div className={styles.zDesktopModalOverlay}>
           <div className={`${styles.zDesktopSearchCard} panel-fade`}>
 
@@ -273,7 +522,7 @@ export default function NearbyStation({ onBack }) {
                   <option value="25000">25 km</option>
                   <option value="50000">50 km</option>
 
-                  <option value="999999">Whole NZ 🇳🇿</option>
+                  <option value="999999">Whole NZ</option>
                 </select>
                 <span className={styles.zCustomChevronArrow}>▼</span>
               </div>
@@ -317,10 +566,11 @@ export default function NearbyStation({ onBack }) {
         </div>
       )}
 
-      {state.currentStep === 3 && (
+      {!isMobile && state.currentStep === 3 && (
         <Comparisons
           options={comparisonOptions}
           onBack={() => dispatch({ type: 'CHANGE_STEP', payload: 2 })}
+          onFacilityHover={setHoveredFacility}
         />
       )}
       </div>
