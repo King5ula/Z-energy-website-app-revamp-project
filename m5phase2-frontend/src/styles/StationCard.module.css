@@ -122,6 +122,7 @@
   gap: 4px;
   margin-bottom: 10px;
   width: 100%;
+  align-items: center;
 }
 
 .utilityBadge {
@@ -134,6 +135,7 @@
   font-family: 'DM Sans', sans-serif !important;
   font-size: 9.5px !important;
   font-weight: 700;
+  max-width: 100%;
 }
 
 .badges {

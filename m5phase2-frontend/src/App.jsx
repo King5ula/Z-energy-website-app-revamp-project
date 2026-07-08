@@ -1,15 +1,15 @@
-import { useState } from "react";
-import { useCallback } from "react";
-import ErrorBoundary from "./components/ErrorBoundary";
-import Navbar from "./components/Navbar";
-import MapView from "./components/MapView";
-import ActionOverlay from "./components/ActionOverlay";
-import StationDetailPanel from "./components/StationDetailPanel";
-import RoutePlanner from "./components/RoutePlanner";
-import FilterPreferences from "./pages/FilterPreferences/FilterPreferences.jsx";
-import { useGeolocation } from "./hooks/useGeolocation";
-import { useDeviceType } from "./hooks/useDeviceType";
-import "./App.css";
+import { useState } from 'react';
+import ErrorBoundary from './components/ErrorBoundary';
+import Navbar from './components/Navbar';
+import MapView from './components/MapView';
+import ActionOverlay from './components/ActionOverlay';
+import StationDetailPanel from './components/StationDetailPanel';
+import RoutePlanner from './components/RoutePlanner';
+import NearbyStation from './pages/NearbyStation/NearbyStation';
+import FilterPreferences from './pages/FilterPreferences/FilterPreferences';
+import { useGeolocation } from './hooks/useGeolocation';
+import { useDeviceType } from './hooks/useDeviceType';
+import './App.css';
 
 function App() {
   const [showActionOverlay, setShowActionOverlay] = useState(true);
@@ -20,6 +20,9 @@ function App() {
   const [userLocation, setUserLocation] = useState(null);
   const [selectedStation, setSelectedStation] = useState(null);
   const [nearestStation, setNearestStation] = useState(null);
+  const [searchQuery, setSearchQuery] = useState('');
+  const [showNearbyStation, setShowNearbyStation] = useState(false);
+  const [showFilterPreferences, setShowFilterPreferences] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const deviceType = useDeviceType();
 
