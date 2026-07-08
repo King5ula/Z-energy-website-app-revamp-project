@@ -6,6 +6,7 @@ import ActionOverlay from './components/ActionOverlay';
 import StationDetailPanel from './components/StationDetailPanel';
 import RoutePlanner from './components/RoutePlanner';
 import NearbyStation from './pages/NearbyStation/NearbyStation';
+import FilterPreferences from './pages/FilterPreferences/FilterPreferences';
 import { useGeolocation } from './hooks/useGeolocation';
 import { useDeviceType } from './hooks/useDeviceType';
 import './App.css';
@@ -19,6 +20,7 @@ function App() {
   const [nearestStation, setNearestStation] = useState(null);
   const [searchQuery, setSearchQuery] = useState('');
   const [showNearbyStation, setShowNearbyStation] = useState(false);
+  const [showFilterPreferences, setShowFilterPreferences] = useState(false);
   const deviceType = useDeviceType();
 
   const { requestLocation } = useGeolocation((location) => {
@@ -69,8 +71,17 @@ function App() {
   };
 
   const handleFilter = () => {
-    console.log('Open filter options');
+    setShowFilterPreferences(true);
   };
+
+  if (showFilterPreferences) {
+    return (
+      <FilterPreferences
+        onBack={() => setShowFilterPreferences(false)}
+        onApply={() => setShowFilterPreferences(false)}
+      />
+    );
+  }
 
   if (showNearbyStation) {
     return <NearbyStation onBack={() => setShowNearbyStation(false)} />;

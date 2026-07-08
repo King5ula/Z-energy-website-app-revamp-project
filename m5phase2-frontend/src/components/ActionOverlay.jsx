@@ -83,6 +83,10 @@ function ActionOverlay({ onClose, onSearch, onPlanRoute, onFilter }) {
   };
 
   const handleFilter = () => {
+    if (onFilter) {
+      onFilter();
+      return;
+    }
     setView('filter');
   };
 

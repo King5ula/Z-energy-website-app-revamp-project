@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./FilterPreferences.module.css";
+import styles from './FilterPreferences.module.css';
 
 export default function FilterPreferences({ onBack, onApply }) {
   const [selectedAmenities, setSelectedAmenities] = useState([]);
@@ -61,10 +61,10 @@ export default function FilterPreferences({ onBack, onApply }) {
   };
 
   return (
-    <div className="filter-preferences-page">
-      <header className="page-header">
-        <button className="back-btn" onClick={onBack}>
-          <span className="back-arrow"></span> Back
+    <div className={styles['filter-preferences-page']}>
+      <header className={styles['page-header']}>
+        <button className={styles['back-btn']} onClick={onBack}>
+          <span className={styles['back-arrow']}></span> Back
         </button>
         <h1>Filter Preferences</h1>
       </header>
