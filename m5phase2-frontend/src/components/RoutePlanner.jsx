@@ -1,6 +1,10 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import AddressAutocomplete from './AddressAutocomplete';
 import '../styles/RoutePlanner.css';
+import CrossroadIcon from '../assets/Crossroad.png';
+import SliderIcon from '../assets/Slider.png';
+import CrossroadIconInverted from '../assets/Crossroad-inverted.png';
+import SliderIconInverted from '../assets/Slider-inverted.png';
 
 // this basically handles route planning with station waypoints
 function RoutePlanner({ userLocation, routeData, onRouteCreated, onClose }) {
@@ -13,15 +17,41 @@ function RoutePlanner({ userLocation, routeData, onRouteCreated, onClose }) {
   const [routeResult, setRouteResult] = useState(null);
   const [directionsData, setDirectionsData] = useState(null);
   const [isMinimized, setIsMinimized] = useState(false);
+  const [selectedRadius, setSelectedRadius] = useState('5km');
   const [preferences, setPreferences] = useState({
     avoidTolls: false,
     avoidHighways: false,
     avoidFerries: false,
     travelMode: 'DRIVING'
   });
+  const hasAutoPlanned = useRef(false); // ponytail: track if we've auto-planned for current routeData
+  const [manualMode, setManualMode] = useState(false); // ponytail: prevent auto-plan when user clicks back
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  useEffect(() => {
+    const checkTheme = () => {
+      const theme = document.documentElement.getAttribute("data-theme");
+      setIsDarkMode(theme === "dark" || theme === null);
+    };
+
+    checkTheme();
+
+    const observer = new MutationObserver(checkTheme);
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["data-theme"],
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
+  const crossroadIcon = isDarkMode ? CrossroadIconInverted : CrossroadIcon;
+  const sliderIcon = isDarkMode ? SliderIconInverted : SliderIcon;
 
   useEffect(() => {
     if (routeData) {
+      hasAutoPlanned.current = false; // reset when routeData changes
+      setManualMode(false); // reset manual mode for new routeData
       if (routeData.startPoint) {
         const startText = typeof routeData.startPoint === 'string'
           ? routeData.startPoint
@@ -48,7 +78,8 @@ function RoutePlanner({ userLocation, routeData, onRouteCreated, onClose }) {
         }));
       }
 
-      if (routeData.startLocation && routeData.destinationLocation) {
+      if (routeData.startLocation && routeData.destinationLocation && !hasAutoPlanned.current && !manualMode) {
+        hasAutoPlanned.current = true;
         setTimeout(() => {
           planRoute(
             routeData.startLocation,
@@ -58,12 +89,16 @@ function RoutePlanner({ userLocation, routeData, onRouteCreated, onClose }) {
         }, 100);
       }
     }
-  }, [routeData]);
+  }, [routeData, manualMode]);
 
   const planRoute = async (startLoc, destLoc, prefs = {}) => {
     console.log('planRoute called with:', { startLoc, destLoc, prefs });
     setLoading(true);
     setError(null);
+
+    // ponytail: capture current state values to avoid closure issues in callback
+    const currentStartPoint = startPoint;
+    const currentDestination = destination;
 
     const timeout = setTimeout(() => {
       console.error('Route planning timed out after 30 seconds');
@@ -115,8 +150,10 @@ function RoutePlanner({ userLocation, routeData, onRouteCreated, onClose }) {
           });
 
           const routeData = {
-            startPoint: startLoc,
-            destination: destLoc,
+            startPoint: currentStartPoint,
+            destination: currentDestination,
+            startLocation: startLoc,
+            destinationLocation: destLoc,
             preferences: prefs
           };
 
@@ -173,6 +210,7 @@ function RoutePlanner({ userLocation, routeData, onRouteCreated, onClose }) {
       return;
     }
 
+    setManualMode(false); // user is manually planning, allow normal flow
     planRoute(parsedStart, parsedDestination, preferences);
   };
 
@@ -210,6 +248,10 @@ function RoutePlanner({ userLocation, routeData, onRouteCreated, onClose }) {
         <div className="route-planner-content">
           {!directionsData ? (
             <>
+              <button className="btn-back" onClick={onClose}>
+                ← Back
+              </button>
+
               <div className="input-section">
                 <div className="input-group">
                   <label>Starting Point</label>
@@ -253,25 +295,63 @@ function RoutePlanner({ userLocation, routeData, onRouteCreated, onClose }) {
             </>
           ) : (
             <div className="directions-container">
-              <button className="btn-back" onClick={() => setDirectionsData(null)}>
+              <button className="btn-back" onClick={onClose}>
                 ← Back
               </button>
+
+              <div className="select-radius-container">
+                <select
+                  className="select-radius"
+                  value={selectedRadius}
+                  onChange={(e) => setSelectedRadius(e.target.value)}
+                >
+                  <option value="2km">2 km radius</option>
+                  <option value="5km">5 km radius</option>
+                  <option value="10km">10 km radius</option>
+                  <option value="20km">20 km radius</option>
+                </select>
+              </div>
 
               <div className="route-summary">
                 <div className="route-addresses">
                   <div className="route-address-item">
-                    <span className="route-marker">A</span>
+                    <span className="route-marker">1</span>
                     <span className="route-address-text">{directionsData.startAddress}</span>
                   </div>
                   <div className="route-address-item">
-                    <span className="route-marker">B</span>
+                    <span className="route-marker">2</span>
                     <span className="route-address-text">{directionsData.endAddress}</span>
                   </div>
                 </div>
+              </div>
+
+              <div className="route-actions-row">
+                <button className="btn-list-nearby-stations">
+                  List Nearby Stations
+                </button>
+
+                <div className="route-action-icons">
+                  <button
+                    className="icon-btn"
+                    onClick={handlePlanRoute}
+                    title="Configure route"
+                  >
+                    <img src={crossroadIcon} alt="Configure" className="icon-img" />
+                  </button>
+                  <button
+                    className="icon-btn"
+                    title="Filter preferences"
+                  >
+                    <img src={sliderIcon} alt="Filter" className="icon-img" />
+                  </button>
+                </div>
+              </div>
+
+              <div className="route-stats-summary">
+                <p>{directionsData.startAddress}</p>
+                <p className="destination-text">to {directionsData.endAddress}</p>
                 <div className="route-stats">
-                  <span className="route-stat">{directionsData.duration}</span>
-                  <span className="route-stat-separator">•</span>
-                  <span className="route-stat">{directionsData.distance}</span>
+                  <span className="route-stat">{directionsData.duration} ({directionsData.distance})</span>
                 </div>
               </div>
 

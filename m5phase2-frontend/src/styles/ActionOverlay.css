@@ -127,6 +127,13 @@
   margin-left: auto;
 }
 
+.route-marker-img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
 /* Route Form Styles */
 .route-form {
   min-width: 420px;
@@ -398,6 +405,13 @@
   background: rgba(255, 101, 35, 0.05);
 }
 
+.location-icon-img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
 .icon-location-arrow-overlay {
   width: 24px;
   height: 24px;
@@ -582,3 +596,87 @@
   transform: translateY(-1px);
   box-shadow: 0 4px 12px rgba(255, 101, 35, 0.3);
 }
+
+/* Filled state route actions */
+.route-actions-filled {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.btn-icon-small {
+  width: 48px;
+  height: 48px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: none;
+  color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.btn-icon-small:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-orange);
+}
+
+.btn-search-wide {
+  width: 260px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #808080;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'DM Sans', sans-serif;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.btn-search-wide.active {
+  background: var(--gradient-orange);
+}
+
+.btn-search-wide.active:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-orange);
+}
+
+.btn-search-wide:hover:not(:disabled):not(.active) {
+  background: #6a6a6a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.btn-search-wide:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.route-marker {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #ff6523;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'DM Sans', sans-serif;
+  flex-shrink: 0;
+}
+
