@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useCallback } from 'react';
 import ErrorBoundary from './components/ErrorBoundary';
 import Navbar from './components/Navbar';
 import MapView from './components/MapView';
@@ -22,8 +22,6 @@ function App() {
   const [nearestStation, setNearestStation] = useState(null);
   const [searchQuery, setSearchQuery] = useState('');
   const [showNearbyStation, setShowNearbyStation] = useState(false);
-  const [showFilterPreferences, setShowFilterPreferences] = useState(false);
-  const [searchQuery, setSearchQuery] = useState("");
   const deviceType = useDeviceType();
 
   const { requestLocation } = useGeolocation((location) => {
@@ -73,6 +71,8 @@ function App() {
 
   const handleCloseRoutePlanner = () => {
     setShowRoutePlanner(false);
+    setShowActionOverlay(true);
+    // routeData is preserved so ActionOverlay can use it
   };
 
   const handleFilter = () => {
@@ -109,6 +109,7 @@ function App() {
             onSearch={handleSearch}
             onPlanRoute={handlePlanRoute}
             onFilter={handleFilter}
+            routeData={routeData}
           />
         )}
 

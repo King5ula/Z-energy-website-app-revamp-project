@@ -7,8 +7,13 @@ import RouteIcon from "../assets/Route.png";
 import RouteIconInverted from "../assets/Route-inverted.png";
 import SliderIcon from "../assets/Slider.png";
 import SliderIconInverted from "../assets/Slider-inverted.png";
+import Marker1 from "../assets/1.png";
+import Marker2 from "../assets/2.png";
+import Marker1Inverted from "../assets/1-inverted.png";
+import Marker2Inverted from "../assets/2-inverted.png";
+import LocationIcon from "../assets/location_icon.png";
 
-function ActionOverlay({ onClose, onSearch, onPlanRoute, onFilter }) {
+function ActionOverlay({ onClose, onSearch, onPlanRoute, onFilter, routeData }) {
   const [view, setView] = useState("main"); // 'main', 'route-form', 'starting-point', 'destination'
   const [startPoint, setStartPoint] = useState("");
   const [destination, setDestination] = useState("");
@@ -30,7 +35,7 @@ function ActionOverlay({ onClose, onSearch, onPlanRoute, onFilter }) {
     };
 
     checkTheme();
-    
+
     const observer = new MutationObserver(checkTheme);
     observer.observe(document.documentElement, {
       attributes: true,
@@ -40,9 +45,43 @@ function ActionOverlay({ onClose, onSearch, onPlanRoute, onFilter }) {
     return () => observer.disconnect();
   }, []);
 
+  // Restore route data when coming back from RoutePlanner
+  useEffect(() => {
+    if (routeData) {
+      if (routeData.startPoint) {
+        const startText = typeof routeData.startPoint === 'string'
+          ? routeData.startPoint
+          : `${routeData.startPoint.lat}, ${routeData.startPoint.lng}`;
+        setStartPoint(startText);
+      }
+      if (routeData.destination) {
+        const destText = typeof routeData.destination === 'string'
+          ? routeData.destination
+          : `${routeData.destination.lat}, ${routeData.destination.lng}`;
+        setDestination(destText);
+      }
+      if (routeData.startLocation) {
+        setStartLocation(routeData.startLocation);
+      }
+      if (routeData.destinationLocation) {
+        setDestinationLocation(routeData.destinationLocation);
+      }
+      if (routeData.preferences) {
+        setPreferences(prev => ({
+          ...prev,
+          ...routeData.preferences
+        }));
+      }
+      // Show the route-form view when coming back
+      setView('route-form');
+    }
+  }, [routeData]);
+
   const searchIcon = isDarkMode ? SearchIconInverted : SearchIcon;
   const routeIcon = isDarkMode ? RouteIconInverted : RouteIcon;
   const sliderIcon = isDarkMode ? SliderIconInverted : SliderIcon;
+  const marker1Icon = isDarkMode ? Marker1Inverted : Marker1;
+  const marker2Icon = isDarkMode ? Marker2Inverted : Marker2;
 
   useEffect(() => {
     const fetchNearbyStations = async () => {
@@ -273,7 +312,7 @@ function ActionOverlay({ onClose, onSearch, onPlanRoute, onFilter }) {
           />
 
           <button className="use-location-button" onClick={handleUseMyLocation}>
-            <span className="icon-location-arrow-overlay"></span>
+            <img src={LocationIcon} alt="Location" className="location-icon-img" />
             Use my location
           </button>
         </div>
@@ -354,6 +393,8 @@ function ActionOverlay({ onClose, onSearch, onPlanRoute, onFilter }) {
 
   // Route form view
   if (view === "route-form") {
+    const hasStartPoint = startPoint && startLocation;
+
     return (
       <div className="action-overlay">
         <div className="action-card route-form">
@@ -369,7 +410,11 @@ function ActionOverlay({ onClose, onSearch, onPlanRoute, onFilter }) {
               <span className="route-button-text-overlay">
                 {startPoint || "Choose a starting point"}
               </span>
-              <img src={searchIcon} alt="Search" className="route-icon-img" />
+              {hasStartPoint ? (
+                <img src={marker1Icon} alt="1" className="route-marker-img" />
+              ) : (
+                <img src={searchIcon} alt="Search" className="route-icon-img" />
+              )}
             </button>
 
             <button
@@ -379,28 +424,47 @@ function ActionOverlay({ onClose, onSearch, onPlanRoute, onFilter }) {
               <span className="route-button-text-overlay">
                 {destination || "Enter Destination"}
               </span>
-              <img
-                src={searchIcon}
-                alt="Destination"
-                className="route-icon-img"
-              />
+              {hasStartPoint ? (
+                <img src={marker2Icon} alt="2" className="route-marker-img" />
+              ) : (
+                <img src={routeIcon} alt="Destination" className="route-icon-img" />
+              )}
             </button>
           </div>
 
-          <div className="route-actions">
-            <button className="btn-filter" onClick={handleFilter}>
-              <img src={sliderIcon} alt="Filter" className="btn-icon-img" />{" "}
-              Filter
-            </button>
-            <button
-              className="btn-configure"
-              onClick={handleConfigureRoute}
-              disabled={!startPoint || !destination}
-            >
-              <img src={routeIcon} alt="Route" className="btn-icon-img" />{" "}
-              Configure route
-            </button>
-          </div>
+          {!hasStartPoint ? (
+            <div className="route-actions">
+              <button className="btn-filter" onClick={handleFilter}>
+                <img src={sliderIcon} alt="Filter" className="btn-icon-img" />{" "}
+                Filter
+              </button>
+              <button
+                className="btn-configure"
+                onClick={handleConfigureRoute}
+                disabled={!startPoint || !destination}
+              >
+                <img src={routeIcon} alt="Route" className="btn-icon-img" />{" "}
+                Configure route
+              </button>
+            </div>
+          ) : (
+            <div className="route-actions-filled">
+              <button className="btn-icon-small" onClick={handleConfigureRoute} title="Configure route">
+                <img src={routeIcon} alt="Configure" className="btn-icon-img" />
+              </button>
+              <button className="btn-icon-small" onClick={handleFilter} title="Filter preferences">
+                <img src={sliderIcon} alt="Filter" className="btn-icon-img" />
+              </button>
+              <button
+                className={`btn-search-wide ${startPoint && destination ? 'active' : ''}`}
+                onClick={handleConfigureRoute}
+                disabled={!startPoint || !destination}
+              >
+                Search
+                <img src={searchIcon} alt="Search" className="btn-icon-img" />
+              </button>
+            </div>
+          )}
         </div>
       </div>
     );
