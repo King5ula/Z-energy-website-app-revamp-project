@@ -91,5 +91,5 @@ npm run dev
 
 - Austin — https://github.com/sameyer48-cpu
 - David — https://github.com/King5ula
-- Hans — https://github.com/King5ula
+- Hans — https://github.com/harusweb
 
