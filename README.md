@@ -23,6 +23,18 @@ This project addresses each of those pain points with a station map, a filterabl
 - **Geolocation** — detects the user's location to find and highlight the nearest station.
 - **Responsive design** — dedicated mobile and desktop layouts, plus a dark mode toggle.
 
+## My Contribution: Nearby Stations
+
+This is my copy of our team repository. I (David) built the Nearby Stations feature from the database through to the map:
+
+- **Data model** — the Mongoose `Station` schema covering each station's services, fuel types and prices, with a `2dsphere` index on its location (`m5phase2-backend/src/models/nearbyStationModel.js`).
+- **API** — the `GET /api/stations` endpoint that serves the station index to the page.
+- **Nearby Stations page** — the Google Maps view with custom Z pins and hover popups, ranking stations by distance from the user and filtering by search radius (`m5phase2-frontend/src/pages/NearbyStation`).
+- **Station cards and price comparison** — `StationCard`, `Comparisons` and `HoverPopup`, which show each station's services and fuel prices and highlight the cheaper option.
+- **Mobile flow** — a four-step mobile journey with a theme-aware `StationAccordion`.
+
+Austin built the entry page and filter preferences, and Hans built the route planner and the region and suburb lookups.
+
 ## Tech Stack
 
 **Frontend** (`m5phase2-frontend`)
